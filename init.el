@@ -130,7 +130,7 @@
 
 (require 'org-roam)
 (setq org-roam-v2-ack t)
-(setq org-roam-directory (file-truename "~/.emacs.d/org-roam"))
+(setq org-roam-directory (file-truename "~/.emacs.d/org-mode"))
 (keymap-global-set "C-c n l" 'org-roam-buffer-toggle)
 (keymap-global-set "C-c n f" 'org-roam-node-find)
 (keymap-global-set "C-c n i" 'org-roam-node-insert)
