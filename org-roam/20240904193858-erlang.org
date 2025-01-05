@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       603a3d40-7ed9-4e4e-b8f4-dcd811ed78f9
+:END:
+#+title:Erlang
+
+A concurrent programming language running on the **BEAM** VM.

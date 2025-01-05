@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       aaba8e6d-b941-4eba-88be-04c1abd892c3
+:END:
+#+title:Effects
+
+#+BEGIN_SRC C
+  sandwhich* s = try_sandwitch();
+  if (!s) { perform MakeSandwitch(s); }
+  eat(s);
+#+END_SRC
+
+Effects are "i don't know how to do this, but someone above me does"
+so we give control to them, and then they can handle everything, and
+throw control back to us when they're done
+
+depending on how you do lexical effects, you can't "nicely" have first class
+functions, which is pretty sucky! you'd end up being able to have functions
+escape the scope in which they're used, which would not work no good because
+then the handler might not exist anymore

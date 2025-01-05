@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       ab77f697-e55f-4225-b163-e6f8c313e8cc
+:END:
+#+title:Limit, Analysis
+
+The simplest **Limit** of some function f : ℝ → ℝ at a value k:
+
+\[
+\lim_{x\to k}f(x) = L
+\]
+
+is said to be L as x approaches k, if, for every ϵ > 0, there exists a δ > 0 s.t. for all x ∈ ℝ, (0 < |x - k| < δ) ⇒ ( 0 < f(x) - L < ϵ).
+
+This can be generalised to open intervals where 𝕊 ⊂ ℝ, f : 𝕊 → ℝ, a b k ∈ ℝ, (a, k) ∪ (k, b) ∈ 𝕊.
+
+
