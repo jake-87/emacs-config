@@ -7,6 +7,8 @@
 (global-set-key (kbd "C->") 'tab-next)
 (global-set-key (kbd "C-<") 'tab-previous)
 
+(setq inhibit-startup-screen t)
+
 (require 'prettify-utils "~/.emacs.d/prettify-utils.el")
 
 (add-hook 'vterm-mode-hook (lambda () (text-scale-decrease 2)))
