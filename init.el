@@ -7,7 +7,7 @@
 (global-set-key (kbd "C->") 'tab-next)
 (global-set-key (kbd "C-<") 'tab-previous)
 
-(require 'prettify-utils "/home/jake/.emacs.d/prettify-utils.el")
+(require 'prettify-utils "~/.emacs.d/prettify-utils.el")
 
 (add-hook 'vterm-mode-hook (lambda () (text-scale-decrease 2)))
 (set-face-attribute 'mode-line nil :height 60)
