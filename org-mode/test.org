@@ -1,0 +1,12 @@
+TEST -*- mode: org -*-
+#+STARTUP: showall
+* Welcome to Org mode!
+ Welcome to the weird world of emacs
+* This is a headline
+yep
+
+** This is a subhead
+
+*** and again
+** TODO Buy airplane
+
