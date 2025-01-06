@@ -198,6 +198,10 @@
 
 (add-hook 'org-mode-hook #'visual-line-mode)
 
+(require 'agda-input)
+
+(add-hook 'org-mode-hook (lambda () (set-input-method "Agda")))
+
 (load-file (let ((coding-system-for-read 'utf-8))
                 (shell-command-to-string "agda-mode locate")))
 
