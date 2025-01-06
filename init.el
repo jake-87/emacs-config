@@ -9,7 +9,7 @@
 
 (setq inhibit-startup-screen t)
 
-(setq minimum-warning-level :error)
+(setq warning-minimum-level :error)
 
 (require 'prettify-utils "~/.emacs.d/prettify-utils.el")
 
@@ -59,6 +59,8 @@
 (setq backup-inhibited t)
 ;disable auto save
 (setq auto-save-default nil)
+
+
 
 (add-hook 'prog-mode-hook 'display-line-numbers-mode)
 (add-hook 'prog-mode-hook #'display-fill-column-indicator-mode)
@@ -198,11 +200,12 @@
 
 (add-hook 'org-mode-hook #'visual-line-mode)
 
+(load-file (let ((coding-system-for-read 'utf-8))
+                (shell-command-to-string "agda-mode locate")))
+
+
 (require 'agda-input)
 
 (add-hook 'org-mode-hook (lambda () (set-input-method "Agda")))
-
-(load-file (let ((coding-system-for-read 'utf-8))
-                (shell-command-to-string "agda-mode locate")))
 
 (setq default-input-method "Agda")
