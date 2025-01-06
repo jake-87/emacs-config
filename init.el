@@ -9,6 +9,8 @@
 
 (setq inhibit-startup-screen t)
 
+(setq minimum-warning-level :error)
+
 (require 'prettify-utils "~/.emacs.d/prettify-utils.el")
 
 (add-hook 'vterm-mode-hook (lambda () (text-scale-decrease 2)))
@@ -43,13 +45,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:height 170 :family "Fantasque Sans Mono"))))
- '(org-document-title ((t (:height 2.0))))
- '(org-level-1 ((t (:height 1.4))))
- '(org-level-2 ((t (:height 1.2))))
- '(org-level-3 ((t (:height 1.15))))
- '(org-level-4 ((t (:height 1.1))))
- '(org-level-5 ((t (:height 1.0)))))
+ )
 
 (set-fontset-font "fontset-default" 'unicode "JuliaMono")
 
@@ -171,7 +167,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(company-coq proof-general vertico org-roam merlin-company company color-identifiers-mode vterm tuareg rust-mode rainbow-delimiters org-superstar org-fragtog org-appear merlin lsp-ui ef-themes)))
+   '(nix-mode company-coq proof-general vertico org-roam merlin-company company color-identifiers-mode tuareg rust-mode rainbow-delimiters org-superstar org-fragtog org-appear merlin lsp-ui ef-themes)))
 
 (require 'merlin-company)
 (add-hook 'tuareg-mode-hook #'merlin-mode)
