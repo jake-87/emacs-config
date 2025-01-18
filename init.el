@@ -13,6 +13,9 @@
 
 (require 'prettify-utils "~/.emacs.d/prettify-utils.el")
 
+
+
+
 (add-hook 'vterm-mode-hook (lambda () (text-scale-decrease 2)))
 (set-face-attribute 'mode-line nil :height 60)
 (require 'ef-themes)
@@ -124,7 +127,10 @@
 ;; hide the #+title:
 (setq org-hidden-keywords '(title))
 ;; make latex preview bigger
-(setq org-format-latex-options (plist-put org-format-latex-options :scale 3.5))
+
+(setq org-preview-latex-default-process 'dvisvgm)
+
+(setq org-format-latex-options (plist-put org-format-latex-options :scale 2.5))
 
 (keymap-global-set "C-x C-p" 'org-latex-preview)
 
@@ -195,6 +201,14 @@
 (setq company-tooltip-align-annotations t)
 
 
+(if (equal system-type 'darwin)
+    (progn (setenv "PATH"
+	    (concat (getenv "PATH")
+		    ":/run/current-system/sw/bin/:/Users/jake/.nix-profile/bin:/nix/var/nix/profiles/default/bin"))
+	   (dolist (dir '("/run/current-system/sw/bin/" "/Users/jake/.nix-profile/bin" "/nix/var/nix/profiles/default/bin"))
+	     (add-to-list 'exec-path dir))
+	   ))
+
 (require 'vertico)
 (vertico-mode)
 
@@ -209,3 +223,7 @@
 (add-hook 'org-mode-hook (lambda () (set-input-method "Agda")))
 
 (setq default-input-method "Agda")
+
+
+(describe-variable (getenv "PATH"))
+

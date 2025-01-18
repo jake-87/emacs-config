@@ -1,0 +1,16 @@
+echo $PATH
+exit
+echo $PATH
+echo $PATH
+exit
+echo $PATH
+echo $PATH
+exit
+echo $PATH
+exit
+echo $PATH
+dvipng
+echo $PATH
+exit
+echo $PATH
+which latex

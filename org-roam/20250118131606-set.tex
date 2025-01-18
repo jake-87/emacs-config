@@ -1,0 +1,89 @@
+% Created 2025-01-18 Sat 13:37
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Jake Henderson}
+\date{\today}
+\title{Set}
+\hypersetup{
+ pdfauthor={Jake Henderson},
+ pdftitle={Set},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 29.4 (Org mode 9.6.15)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+
+\section{A set is an unordered collection of elements.}
+\label{sec:org5d46f09}
+\subsection{Operations include:}
+\label{sec:org03997d2}
+
+Membership: \(x \in S\) and \(x \notin S\)
+
+Set inclusion: \(s \subset S\) and \(s \subseteq S\)
+
+Union: \(A \cap B\)
+
+Intersection: \(A \cup B\)
+
+Compliment: \(B^c \equiv \{s\, | \, s \notin B\}\) or \(\overline{B}\)
+
+Subtraction: \(A - B \equiv \{ a \, | \, a \in A \land a \notin B \}\)
+
+Universal set: \(\text{Univ} \equiv A \cap A^c\)
+
+Cardinality (number of elements in set): \(|A|\)
+
+Equality: \(A = B \equiv A \subseteq B \land  B \subseteq A\)
+
+Cartesian product: \(A \times B \equiv \{(a,b) \, | \, a \in A \land b \in B\}\)
+
+Collective intersection: \(\bigcup_{n} S_n \equiv S_0 \cup S_1 \cup \dots \cup S_n\)
+
+Collective union: \(\bigcap_n S_n \equiv S_0 \cap S_1 \cap \dots \cap S_n\)
+
+\subsection{Common laws:}
+\label{sec:org36f46e7}
+\subsubsection{Demorgan:}
+\label{sec:org3ccb392}
+
+\(\overline{A \cap B} = \bar{A} \cup \bar{B}\)
+
+\(\overline{A \cup B} = \bar{A} \cap \bar{B}\)
+
+In general,
+
+\(\overline{\bigcap S_n} = \bigcup{\overline{S_n}}\)
+
+and
+
+\(\overline{\bigcup S_n} = \bigcap{\overline{S_n}}\)
+
+\subsubsection{Cardinality}
+\label{sec:org6ef837a}
+
+\(|A \cap B| = |A| + |B| - |A \cup B|\)
+
+\(|A \cup B| = |A| + |B| - |A \cap B|\)
+
+\(|A \times B| = |A| \times |B|\)
+
+With the \href{20250118105151-powerset.org}{Powerset}:
+
+\(|\mathcal{P}(S)| = 2^{|S|}\)
+\end{document}
