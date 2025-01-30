@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       2E1C1439-9A49-49A4-99AA-2866387A0EC3
+:END:
+#+title:Injectivity
+
+A function $f : A \to B$ is **injective** if $f(a) = f(b) \implies a = b$. Alternatively, each element in the domain maps to a unique element in the codomain.

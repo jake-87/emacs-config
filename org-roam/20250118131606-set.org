@@ -1,0 +1,51 @@
+:PROPERTIES:
+:ID:       43D0127C-D7D3-4B9E-A1D7-B681CEAD90D4
+:END:
+#+title:Set
+
+* A set is an unordered collection of elements.
+** Operations include:
+
+Membership: $x \in S$ and $x \notin S$
+
+Set inclusion: $s \subset S$ and $s \subseteq S$
+
+Union: $A \cap B$
+
+Intersection: $A \cup B$
+
+Compliment: $B^c \equiv \{s\, | \, s \notin B\}$ or $\bar{B}$
+
+Subtraction: $A - B \equiv \{ a \, | \, a \in A \land a \notin B \}$
+
+Universal set: $\text{Univ} \equiv A \cap A^c$
+
+Cardinality (number of elements in set): $|A|$
+
+Equality: $A = B \equiv A \subseteq B \land  B \subseteq A$
+
+Cartesian product: $A \times B \equiv \{(a,b) \, | \, a \in A \land b \in B\}$
+
+** Common laws:
+*** Demorgan:
+
+$\overline{A \cap B} = \bar{A} \cup \bar{B}$
+
+$\overline{A \cup B} = \bar{A} \cap \bar{B}$
+
+*** Cardinality
+
+$|A \cap B| = |A| + |B| - |A \cup B|$
+
+$|A \cup B| = |A| + |B| - |A \cap B|$
+
+$|A \times B| = |A| \times |B|$
+
+With the [[id:FFC9DEF2-0E86-486F-A6BA-ECD9134DF197][Powerset]]:
+
+$|\mathcal{P}(S)| = 2^{|S|}$
+
+
+
+
+

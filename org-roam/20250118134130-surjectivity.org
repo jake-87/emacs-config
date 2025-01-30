@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       03632F6E-E317-4E6B-8D51-FCE63E3E080E
+:END:
+#+title:Surjectivity
+
+A function $f : A \to B$ is **surjective** if $\forall (b : B), \exists (a : A)\, s.t. \, f(a) = b$. Alternatively, every element in the codomain is present in the possible outputs of the function (its range).
