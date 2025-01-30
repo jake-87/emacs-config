@@ -69,7 +69,7 @@
   (lsp-ui-sideline-enable t)
   (lsp-ui-sideline-show-diagnostics t)
   (lsp-ui-sideline-show-hover t)
-  (lsp-ui-sideline-delay 0.0))
+  (lsp-ui-sideline-delay 0.2))
 (use-package lsp-mode
   :hook (c-mode . lsp))
 (setq-default abbrev-mode t)
@@ -139,6 +139,7 @@
 (setq org-roam-directory (file-truename "~/.emacs.d/org-roam"))
 (keymap-global-set "C-c n l" 'org-roam-buffer-toggle)
 (keymap-global-set "C-c n f" 'org-roam-node-find)
+
 (keymap-global-set "C-c n i" 'org-roam-node-insert)
 (setq org-roam-completion-everywhere t)
 (org-roam-db-autosync-mode)
@@ -175,25 +176,17 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(nix-mode company-coq proof-general vertico org-roam merlin-company company color-identifiers-mode tuareg rust-mode rainbow-delimiters org-superstar org-fragtog org-appear merlin lsp-ui ef-themes)))
+   '(isearch-mb corfu nix-mode company-coq proof-general vertico org-roam color-identifiers-mode tuareg rust-mode rainbow-delimiters org-superstar org-fragtog org-appear merlin lsp-ui ef-themes)))
 
-(require 'merlin-company)
+(autoload 'merlin-mode "merlin" "Merlin mode" t)
 (add-hook 'tuareg-mode-hook #'merlin-mode)
-(add-hook 'after-init-hook 'global-company-mode)
+(add-hook 'caml-mode-hook #'merlin-mode)
 
-(setq company-minimum-prefix-length 2
-      company-idle-delay 0.4) ;; default is 0.2
-
-;; Make company aware of merlin
-(with-eval-after-load 'company
-  (add-to-list 'company-backends 'merlin-company-backend))
- ;; Enable company on merlin managed buffers
-(add-hook 'merlin-mode-hook 'company-mode)
-
-
-(setq company-require-match nil)
-(setq company-tooltip-align-annotations t)
-
+(global-corfu-mode)
+(setq corfu-auto t
+      corfu-quit-no-match 'separator) ;; or t
+(setq corfu-auto-delay 0.2)
+(setq corfu-auto-prefix 3)
 
 (require 'vertico)
 (vertico-mode)
@@ -207,5 +200,5 @@
 (require 'agda-input)
 
 (add-hook 'org-mode-hook (lambda () (set-input-method "Agda")))
-
 (setq default-input-method "Agda")
+(isearch-mb-mode)
