@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       1EC10460-43B3-44A6-B9D1-E2DD714F2846
+:END:
+#+title:Symmetric, relation
+
+A binary relation $R$ is symmetric if $\forall x\, y, R(x,y) \iff R(y,x)$.
+
+

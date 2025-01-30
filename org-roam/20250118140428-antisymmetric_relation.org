@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       F654A99C-402A-4472-9BCD-CD0CAEC0915F
+:END:
+#+title:Antisymmetric, relation
+
+A binary relation $R$ is antisymmetric if $\forall x\, y, R(x,y) \land R(y,x) \implies x = y$.
+
+For example, less than is antisymmetric: $x \leq y \land x \leq y \implies x = y$.

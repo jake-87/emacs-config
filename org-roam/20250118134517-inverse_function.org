@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       39294B07-869C-42B3-BABE-C41A633F18FB
+:END:
+#+title:Inverse function
+
+The inverse of a function $f : A \to B$, written $f^{-1} : B \to A$, is defined such that whenever $f(a) = b$, $f^{-1}(b) = a$.

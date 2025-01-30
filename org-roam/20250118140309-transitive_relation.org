@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       125DBE22-A8AF-457E-B5BC-6FF88A8740A0
+:END:
+#+title:Transitive, relation
+
+A binary relation $R$ is transitive if $\forall x\, y\, z, R(x,y)\, \land \, R(y,z) \implies R(x, z)$.
