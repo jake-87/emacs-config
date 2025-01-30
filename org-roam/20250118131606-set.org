@@ -63,7 +63,7 @@ $|\mathcal{P}(S)| = 2^{|S|}$
 
 Inclusion commutes with subsets:
 
-$s \in S \land S' \subseteq S \implies s \in S'$.
+$s \in S \land S \subseteq S' \implies s \in S'$.
 
 And union:
 
