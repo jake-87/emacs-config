@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       fbac5098-496c-44da-85d1-9e987acc18e8
+:END:
+#+title:Terminal Object
+
+
+Let C be a category. A terminal object in C is an object T ∈ C s.t. for all x ∈ C, there exists a unique morphism from x → T.
+
+Any one element set is terminal.
