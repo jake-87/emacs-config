@@ -3,9 +3,9 @@
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-capture-last-stored"
- (filename . "~/.emacs.d/org-roam/20250209125929-terminal_object.org")
- (front-context-string . "\n\nLet C be a cat")
- (rear-context-string . "Terminal Object\n")
- (position . 92)
- (last-modified 26536 3193 200340 317000))
+ (filename . "~/.emacs.d/org-roam/20250217140658-line_algebra.org")
+ (front-context-string . "\n\nA line in a [[")
+ (rear-context-string . "e:Line, Algebra\n")
+ (position . 90)
+ (last-modified 26546 43684 987076 0))
 )

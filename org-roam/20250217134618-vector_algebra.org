@@ -1,0 +1,141 @@
+:PROPERTIES:
+:ID:       32A7773E-6EFF-42D4-84F9-F6A0C41366D1
+:END:
+#+title:Vector, Algebra
+
+* Defintion
+
+A **vector** in R^n is a collection of n scalars, denoting a direction and magnitude in that space.
+
+Vectors do not have a location, only a magnitude and direction.
+
+* Spaces
+
+R^n is called a "vector space". These spaces are defined as
+
+\begin{align*}
+\mathbb{R}^n = \left\{ \begin{bmatrix} a_1 \\ a_2 \\ \vdots \\ a_n \end{bmatrix} :\, a_1, a_2, \dots, a_n \in \mathbb{R} \right\}
+\end{align*}
+
+
+A standard basis vector in R^n is an element of R^n that is zero for all dimensions except 1, and are in general notated e_i:
+
+\begin{align*}
+e_i = \begin{bmatrix} 0 \\ \vdots \\ 1\, \text{at}\, i \\ \vdots \\ 0 \end{bmatrix}
+\end{align*}
+
+
+For low dimensions, they are notated $\bold{i}$, then $\bold{j}, \bold{k}$, etc. This allows for a vector to also be written:
+
+\begin{align*}
+\begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix} = 1\bold{i} + 2\bold{j} + 3\bold{k}
+\end{align*}
+
+* Operations
+
+** Basic operations
+
+Vector addition is the sum of elements, piecewise:
+
+\begin{align*}
+\begin{bmatrix} a_1 \\ a_2 \end{bmatrix}
++_v \begin{bmatrix} b_1 \\ b_2 \end{bmatrix} = \begin{bmatrix} a_1 +_s b_2 \\ a_2 +_s b_2 \end{bmatrix}
+\end{align*}
+
+Vectors have a zero element $\bold{0}$ s.t. $\bold{x} + \bold{0} = \bold{x}$
+
+Vectors have inverses: $-\bold{x}$ is define s.t. $\bold{x} + (-\bold{x}) = \bold{0}$
+
+Subtraction is therefore defined as $\bold{u} - \bold{v} = \bold{u} + (-\bold{v})$
+
+Scalars freely distribute:
+
+$\lambda\begin{bmatrix}{x \\ y}\end{bmatrix} = \begin{bmatrix}{\lambda x \\ \lambda y}\end{bmatrix}$
+
+Together these obey all the expected properties.
+
+** Magnitude and parallelism
+
+The magnitude of a vector, denoted $|\bold{x}|$ , is defined in R^n as
+
+\begin{align*}
+\sqrt{a_1^2 + a_2^2 + a_3^2 + \dots + a_n^2} = \sqrt{\left(\sum_{k=1}^n a_k^2\right)}
+\end{align*}
+
+
+This commutes with scalars as expected: $|\lambda \bold{x}| = |\lambda| |\bold{x}|$
+
+The normalization of a vector is defined as the vector in the same direction, but of length 1.
+
+\begin{align*}
+\hat{\bold{x}} = \frac{\bold{x}}{|\bold{x}|}
+\end{align*}
+
+It's fairly trivial to see this is true: $\left|\frac{\bold{x}}{|\bold{x}|}\right| = \frac{1}{|\bold{x}|}|\bold{x}| = 1$.
+
+Two vectors $\bold{u}$ and $\bold{v}$ are defined to be parallel if there exists some $\lambda$ such that $\bold{u} = \lambda \bold{v}$. This does mean vectors in opposite directions are parallel.
+
+Distance is defined as $\text{dist}(\bold{u},\bold{v}) = |\bold{v} - \bold{u}|$. It is clear how this shows the distance between two vectors via the vector betwixt them.
+
+** Positional vectors:
+
+A positional vector $\vec{OA}$ is a vector from one point to another.
+
+*** Laws:
+
+$\vec{OA} = -\vec{AO}$.
+
+$\vec{AO} + \vec{OB} = \vec{AB}$.
+
+Therefore, $\vec{AB} = \vec{OB} - \vec{OA}$.
+
+** More complex operations:
+
+The dot product $\bold{u} \cdot \bold{v}$ in R^n is defined as the sum
+
+\begin{align*}
+\bold{u} \cdot \bold{v} = \sum_{k = 1}^n \bold{u}_k \bold{v}_k
+\end{align*}
+
+
+This commutes how you'd expect of multiplication. Notably, it is not associative, as the output is a scalar, not a vector.
+Due to this, the dot product does not have an identity operation.
+
+*** Notable identities:
+
+$\lambda (\bold{u} \cdot \bold{v}) = \lambda\bold{u} \cdot \bold{v} = \bold{u} \cdot \lambda\bold{v}$
+
+$\bold{u} \cdot (\bold{a} +_v \bold{b}) = \bold{u} \cdot \bold{a} +_s \bold{u} \cdot \bold{b}$ (Note the different types of addition!)
+
+$\bold{0} \cdot \bold{v} = \bold{0}$
+
+The dot product with any basis vector "isolates" that component:
+
+\begin{align*}
+\bold{i} \cdot \begin{bmatrix} 3 \\ 2 \end{bmatrix}
+= \begin{bmatrix} 1 \\ 0 \end{bmatrix} \cdot \begin{bmatrix} 3 \\ 2 \end{bmatrix}
+= 1 \times 3 + 0 \times 2
+= 3
+\end{align*}
+
+$\bold{v} \cdot \bold{v} = |\bold{v}|^2$
+
+This is observable from the definition of the dot product and of the magnitude operation.
+
+\begin{align*}
+\bold{v} \cdot \bold{v}
+= \sum_{k=1}^n \bold{v}_k\bold{v}_k
+= \sum_{k=1}^n \bold{v}_k^2
+= \left(\sqrt{\sum_{k=1}^n \bold{v}_k^2}\right)^2
+= |\bold{v}|^2
+\end{align*}
+
+
+
+
+
+
+
+
+
+

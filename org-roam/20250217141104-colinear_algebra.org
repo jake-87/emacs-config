@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       F191098B-16E8-4CB3-B8EF-88EE6ED9E577
+:END:
+#+title:Colinear, Algebra
+
+Points are co-linear if they lie on the same line.
+In other words, there exists a set of $\lambda$s s.t. on some given line, $L(\lambda_1) = A$, $L(\lambda_2) = B$, $L(\lambda_3) = C$.
+This has the consequence of meaning that $AB$ and $BC$ are parallel.
