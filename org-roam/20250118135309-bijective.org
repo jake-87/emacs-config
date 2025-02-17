@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       D0690E8C-80D0-415A-801E-44C6054DEF4A
+:END:
+#+title:Bijective
+
+A bijective function $f : A \to B$ is a function that is both [[id:03632F6E-E317-4E6B-8D51-FCE63E3E080E][Surjective]] and [[id:2E1C1439-9A49-49A4-99AA-2866387A0EC3][Injective]]. In other words, it maps each element in its domain exactly to one element in its codomain.

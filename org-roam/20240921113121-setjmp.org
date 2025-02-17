@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       7b022129-e448-43f9-b0bf-ef8174c1f764
+:END:
+#+title:Setjmp
+
+setjmp and longjmp must only be used "up" the call stack
+
+anything in the local scope of setjmp must be marked `volatile` because otherwise
+you can get very unpleasant stuff happen

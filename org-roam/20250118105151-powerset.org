@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       FFC9DEF2-0E86-486F-A6BA-ECD9134DF197
+:END:
+#+title:Powerset
+
+The **powerset** of a set S is every subset of S, including S itself:
+
+\[
+\mathcal{P} (S) = \{ s \, | \, s \subseteq S \}
+\]
+
+The cardinality of a powerset: if $| S | = k$, $| \mathcal{P}(S) | = 2^k$.
+
+The proof of this is trivial; for every element s in S, it can either be included or excluded. Therefore, there are 2^n elements in the powerset.

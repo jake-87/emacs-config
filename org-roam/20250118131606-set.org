@@ -1,0 +1,74 @@
+:PROPERTIES:
+:ID:       43D0127C-D7D3-4B9E-A1D7-B681CEAD90D4
+:END:
+#+title:Set
+
+* A set is an unordered collection of elements.
+** Operations include:
+
+Membership: $x \in S$ and $x \notin S$
+
+Set inclusion: $s \subset S$ and $s \subseteq S$
+
+Union: $A \cap B$
+
+Intersection: $A \cup B$
+
+Compliment: $B^c \equiv \{s\, | \, s \notin B\}$ or $\overline{B}$
+
+Subtraction: $A - B \equiv \{ a \, | \, a \in A \land a \notin B \}$
+
+The empty set: $\emptyset$, containing no elements
+
+Universal set: $\text{Univ} \equiv A \cap A^c$
+
+Cardinality (number of elements in set): $|A|$
+
+Equality: $A = B \equiv A \subseteq B \land  B \subseteq A$
+
+Cartesian product: $A \times B \equiv \{(a,b) \, | \, a \in A \land b \in B\}$
+
+Collective intersection: $\bigcup S_n \equiv S_0 \cup S_1 \cup \dots \cup S_n$
+
+Collective union: $\bigcap S_n \equiv S_0 \cap S_1 \cap \dots \cap S_n$
+
+** Common laws:
+*** Demorgan:
+
+$\overline{A \cap B} = \bar{A} \cup \bar{B}$
+
+$\overline{A \cup B} = \bar{A} \cap \bar{B}$
+
+In general,
+
+$\overline{\bigcap S_n} = \bigcup{\overline{S_n}}$
+
+and
+
+$\overline{\bigcup S_n} = \bigcap{\overline{S_n}}$
+
+*** Cardinality
+
+$|A \cap B| = |A| + |B| - |A \cup B|$
+
+$|A \cup B| = |A| + |B| - |A \cap B|$
+
+$|A \times B| = |A| \cdot |B|$
+
+With the [[id:FFC9DEF2-0E86-486F-A6BA-ECD9134DF197][Powerset]]:
+
+$|\mathcal{P}(S)| = 2^{|S|}$
+
+*** Inclusion:
+
+Inclusion commutes with subsets:
+
+$s \in S \land S \subseteq S' \implies s \in S'$.
+
+And union:
+
+$s \in S \implies s \in S \cap A$.
+
+But not always intersection:
+
+$s \in A \land s \in B \implies s \in A \cup B$.

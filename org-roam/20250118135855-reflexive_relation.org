@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       4E236522-50FF-4523-93B2-81909A293C9D
+:END:
+#+title:Reflexive, relation
+
+A binary relation $R$ is reflexive if $\forall x, R(x,x)$.

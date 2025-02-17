@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       a9591eb1-12c8-485d-b24f-a1389e4d6cf0
+:END:
+#+title:SML
+
+to quote colin:
+#+BEGIN_QUOTE
+ OCaml is way outta SML's league
+#+END_QUOTE

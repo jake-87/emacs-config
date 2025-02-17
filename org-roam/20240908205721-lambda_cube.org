@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       cca88707-4c39-47e3-8fd7-3fec47d1e075
+:END:
+#+title:Lambda cube
+
+
+#+BEGIN_QUOTE
+the lambda cube is kind of bogus and should be ignored -- reed
+#+END_QUOTE
+

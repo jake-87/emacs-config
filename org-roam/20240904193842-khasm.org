@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       44ba908c-4df2-4eca-a741-42b68d17d1ad
+:END:
+#+title:Khasm
+My programming language!
+Inspired by [[id:603a3d40-7ed9-4e4e-b8f4-dcd811ed78f9][Erlang]].
+Has [[id:377bfdb5-4287-47aa-af9c-5bca4596c554][traits]].
+
+\[
+hehe
+\]

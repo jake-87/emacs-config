@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       377bfdb5-4287-47aa-af9c-5bca4596c554
+:END:
+#+title:Traits
+
+* Multiparameter notes:
+
+From smasher on discord:
+
+You can't do the instantiation/propagation technique that some do for single-parameter tc for multiparam tc. If you do, you need backtracking.
+If you're doing the unification and then a separate trait resolution pass, then that will continue to work for multiparameter traits.
+
+Multiparameter traits are kinda terrible for type inference, which is why, as you know, associate
+d traits and fundeps exist. But those pose their own complexity in implementaiton
+
+If you have let generalization, you will need to resolve some instances before generalization a type.
+Processing a fundep might result in more constraints that need to be processed, so having some sort of constraint queue that you iterate over to a fixed point would be good.
