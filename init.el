@@ -216,3 +216,7 @@
 (add-hook 'org-mode-hook (lambda () (set-input-method "Agda")))
 (setq default-input-method "Agda")
 (isearch-mb-mode)
+
+
+(add-hook 'c-mode-hook 'lsp)
+(add-hook 'c++-mode-hook 'lsp)
