@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       CE67A5DB-7BD5-476B-863D-41D167368989
+:END:
+#+title:Span, algebra
+
+The span of vectors $v_1, v_2, \dots, v_n$ is the set of all [[id:A6AE08EF-47FF-4336-8C24-FDA08B3C8F8C][Linear combinations]] of those vectors.
+
+\[\text{span}(v_1, v_2, \dots, v_n) = \left\{ \lambda_1 v_1 + \lambda_2 v_2 + \dots + \lambda_n v_n \, : \, \lambda_1, \dots, \lambda_n \in \mathbb{R}^n \right\}\]
+
+Notable examples:
+
+- \[\text{span}(\begin{bmatrix}1\\0\\0\end{bmatrix}, \begin{bmatrix}0\\1\\0\end{bmatrix}, \begin{bmatrix}0\\0\\1\end{bmatrix}) = \mathbb{R}^3\]
+
+- \[\text{span}(\begin{bmatrix}1\\2\\3\end{bmatrix}) = \text{line through the origin in direction (1,2,3)}\]
+
+  
+

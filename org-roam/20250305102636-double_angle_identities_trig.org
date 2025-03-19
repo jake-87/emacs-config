@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       6F3A3348-5AFF-4A6E-AD52-6CB7AFEBCECB
+:END:
+#+title:Double angle identities, trig
+
+
+** sin cos:
+
+\[\sin(a \pm b) = \sin(a)\cos(b) \pm \cos(a)\sin(b)\]
+
+\[\cos(a \pm b) = \cos(a)\cos(b) \mp \sin(a)\sin(b)\]
+
+special cases:
+
+\[\sin(2x) = 2\sin x \cos x\]
+\[\cos(2x) = \cos^2 x - \sin^2 x\]
+
+
+

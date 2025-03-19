@@ -3,6 +3,11 @@
 :END:
 #+title:Symmetric, relation
 
+* Defintion
+
 A binary relation $R$ is symmetric if $\forall x\, y, R(x,y) \iff R(y,x)$.
+
+* Properties
+
 
 

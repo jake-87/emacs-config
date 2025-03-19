@@ -3,9 +3,9 @@
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-capture-last-stored"
- (filename . "~/.emacs.d/org-roam/20250217140658-line_algebra.org")
- (front-context-string . "\n\nA line in a [[")
- (rear-context-string . "e:Line, Algebra\n")
- (position . 90)
- (last-modified 26546 43684 987076 0))
+ (filename . "~/.emacs.d/org-roam/20250317092607-de_moivre_s_theorem_complex_analysis.org")
+ (front-context-string . "\n* Definition\n\n\\")
+ (rear-context-string . "omplex analysis\n")
+ (position . 114)
+ (last-modified 26583 20521 476148 0))
 )

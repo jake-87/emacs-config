@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       43970366-4FD9-4CEC-B618-45C56FEC0EDF
+:END:
+#+title:Bounded, calculus
+
+
+* Definition
+
+$f$ is "bounded" on an interval $I$ if there is some positive real $M$ such that $\forall x, |f(x)| \leq M$.
+

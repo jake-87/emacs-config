@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       7A28FDE8-D592-4ADA-8DEB-7F2D464F3046
+:END:
+#+title:Varignon's theorem, geometry
+
+Given a convex qualrilateral ABCD, the qualrilateral formed by the midpoints of the four sides is a parallelogram.
+
+** Proof:
+
+Let L, M, N, K be the midpoints of AB, BC, CD, DA.
+
+Defined a, b, c, d = vectors of AB, BC, CD, DA.
+
+Note that a + b + c + d = 0.
+
+LM = LB + BM = 1/2a + 1/2b.
+KN = KD + DN = -1/2(d + c).
+
+Since a + b + c + d = 0, it follows that 1/2(a + b) + 1/2(c + d) = 0.
+
+Therefore, 1/2(a + b) = -1/2(c + d).
+
+Therefore, LM = KN.
+
+Therefore LMNK is a parallelogram, as it has two parallel sides of equal length.
+
+

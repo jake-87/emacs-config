@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       7869330B-2FD9-4A88-A034-2E92E510AB4C
+:END:
+#+title:Relation, logic
+
+
+* Definition
+
+** Set theory
+
+A relation is a set of ordered pairs $R \subseteq X \times Y$, where $R$ contains
+every two related elements.
+
+** Type theory
+
+A relation is a function $R : (A, B) \to \text{Type}$, where $R (x, y)$ is
+inhabited if $(x, y)$ is contained in the relation.
+
+* Possible Properties:
+
+- [[id:125DBE22-A8AF-457E-B5BC-6FF88A8740A0][Transitive]]
+- [[id:1EC10460-43B3-44A6-B9D1-E2DD714F2846][Symmetric]]
+- [[id:F654A99C-402A-4472-9BCD-CD0CAEC0915F][Antisymmetric]]
+- [[id:4E236522-50FF-4523-93B2-81909A293C9D][Reflexive]]

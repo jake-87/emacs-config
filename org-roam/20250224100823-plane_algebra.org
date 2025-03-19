@@ -1,0 +1,62 @@
+:PROPERTIES:
+:ID:       ED767D3F-5301-4530-B443-30CD5D390796
+:END:
+#+title:Plane, algebra
+
+* Definition
+
+The plane parallel to nonparallel nonzero vectors $v_1, \dots, v_{n-1}$ in $\mathbb{R}^n$ and passing through $a \in \mathbb{R}$ is
+
+\[P = \left\{a + \lambda_1 v_1 + \dots + \lambda_{n-1} v_{n-1} \, : \, \lambda_{\dots} \in \mathbb{R}\right\}\]
+
+Colinear points cannot define a plane.
+
+* Representations
+
+A plane defined by points $A(1,2,3), B(0,1,2), C(3,2,3)$ can be defined via $\vec{OA}$, $\vec{AB}$ and $\vec{AC}$:
+
+\[ P = \{ \vec{OA} + \lambda_1 \vec{AB} + \lambda_2 \vec{AC} \, : \, \lambda_1,\lambda_2 \in \mathbb{R} \}\]
+
+
+A plane in $\mathbb{R}^n$ can also be defined as a cartesian equation
+
+3d:
+\[ax + by + cz = d\]
+
+nd:
+
+\[a_1 x_1 + a_2 x_2 + \dots + a_n x_n = d \]
+
+In 3d this is called a plane, in nd this is called a hyperplane.
+
+Another possible definition of a plane is via a point $a$, and a normal vector $\bold{n}$.
+This leads to
+
+\begin{align*}
+\bold{n} &\cdot \bold{x} = \bold{n} \cdot a
+\\
+\bold{n} &\cdot (\bold{x} - a) = \bold{0}
+\end{align*}
+
+Equivalently. These are clear from the fact that if $\bold{x}$ lies on the plane, then the vector from the point $a$ to $\bold{x}$ will be perpendicular to the
+normal.
+
+We can rewrite this in cartiesian form using $\bold{n}$ and $i, j, k$, etc.
+
+* Properties
+** Angles between planes
+
+We can determine the angle between two planes by inspecting the angle between their normal vectors.
+
+** Distance to a plane
+
+The distance of a vector to a plane can be calculated using
+the [[id:32883EF4-AA23-4DF6-83CE-3C6ECF64D8BF][Projection]] of the vector onto the normal of the plane.
+
+** Testing coplanarity
+
+To test whether four points are on a plane, find three vectors $AB, AC, AD$. Then, via finding the volume of the parallelpiped defined by
+$AB, AC, AD$ (or, in other words, the result of the triple scalar product $AB \cdot (AC \times AD)$ we can deduce coplanarity - if the parallelpiped
+has volume 0, they must be coplanar, else not.
+
+

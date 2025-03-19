@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       642F47BE-AC8A-4D6A-ABB0-98238E29F7A8
+:END:
+#+title:Pinch theorem, analysis
+
+The pinch theorem states that for three functions $f,g,h : \mathbb{R} \to \mathbb{R}$, where:
+
+\[\forall x, f(x) \leq g(x) \leq h(x)\]
+
+if $\lim_{x\to k} f(x) = \lim_{x \to k} h(x) = L$, then $\lim_{x \to k} g(x) = L$. In other words, the limit is "pinched" between the other two functions.

@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       7C7F1E6A-6944-4BED-8893-B681DC9FD22A
+:END:
+#+title:Elementary, function
+
+An elementary function is one composed of only:
+- Polynomials
+- Exponentials
+- Logarithms
+- Trig and inverse trig functions
+- Roots
+- Regular operations (+, -, *, /)

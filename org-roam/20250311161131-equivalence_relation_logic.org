@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       21ED6F75-F44E-4BB9-B53D-D5B2D36C5134
+:END:
+#+title:Equivalence relation, logic
+
+
+* Definition
+An equivalence relation is some binary [[id:7869330B-2FD9-4A88-A034-2E92E510AB4C][Relation]] $R$ such that $R$ is:
+
+- [[id:4E236522-50FF-4523-93B2-81909A293C9D][Reflexive]]
+- [[id:1EC10460-43B3-44A6-B9D1-E2DD714F2846][Symmetric]]
+- [[id:125DBE22-A8AF-457E-B5BC-6FF88A8740A0][Transitive]]
+
+* Properties
+
+- [[id:A01E15E8-CE66-4F62-90B9-B8C36DBD5F9F][Equivalence class, logic]]

@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       D2319C47-5D14-4B7D-B07C-729AFCC34C4A
+:END:
+#+title:Scalar triple product, algebra
+
+
+* Definition
+
+The scalar triple product is defined via both the [[id:140317C3-BADC-448B-A856-9D82B1C99C38][Dot product]] and the [[id:A758DE8C-564B-4F3B-89ED-5121EB1A7928][Cross product]].
+
+For $a, b, c \in \mathbb{R}^3$, the scalar triple product is:
+
+\[a \cdot (b \times c) = \det\begin{bmatrix}a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3 \\ c_1 & c_2 & c_3 \end{bmatrix}\]
+
+
+* Properties
+
+- $a \cdot (a \times b) = 0$
+
+- $b \cdot (a \times b) = 0$
+
+  (The cross product is orthogonal to both $a$ and $b$)

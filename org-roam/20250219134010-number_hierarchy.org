@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       1230DF14-C150-4B97-BD93-0E2F4B25AA14
+:END:
+#+title:Number hierarchy
+
+The number heirachy is increasingly "large" sets of numbers, encompassing more and more.
+
+$\mathbb{N} = \{0, 1, 2, \dots \}$
+
+$\mathbb{Z} = \{\dots, -1, 0, 1, \dots\}$
+
+$\mathbb{Q} = \{\frac{p}{q}\, | \, p,q \in \mathbb{Z}, q \not = 0\}$
+
+$\mathbb{R} = \{\text{all numbers on the real number line} \}$
+
+$\mathbb{I} = \mathbb{R} - \mathbb{Q}$, see [[id:7F0B19DC-0E34-4F9E-9833-43B70AAF2B84][Irrational number]].
+
+$\mathbb{C} = \{(p,q) \, | \, p,q \in \mathbb{R}\}$
+

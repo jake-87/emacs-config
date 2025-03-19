@@ -3,6 +3,7 @@
 :END:
 #+title:Line, Algebra
 
+* Definition
 
 A line in a [[id:32A7773E-6EFF-42D4-84F9-F6A0C41366D1][Vector space]] is defined via a point (technically a positional vector from the origin to that point), and a "direction vector".
 
@@ -12,9 +13,14 @@ L = A + \lambda\bf{x}
 
 where $\lambda \in \mathbb{R}$, $A \in \mathbb{R}^n$.
 
-$A$ can be any point on the line, and $\bf{x}$ can be any vector that is parallel to the line.
+$A$ can be any point on the line, and $\bf{x}$ can be any nonzero vector that is parallel to the line.
 
 Mention: [[id:F191098B-16E8-4CB3-B8EF-88EE6ED9E577][Colinear, Algebra]].
+Mention: [[id:A6AE08EF-47FF-4336-8C24-FDA08B3C8F8C][Linear combination, algebra]]
+
+* Representations
+
+A line in R^n needs n-1 equations to define.
 
 A line through two points $A$ and $B$ can therefore be defined as
 
@@ -36,6 +42,23 @@ It is fairly easy to obtain a vector representation from a cartesian one. If $y 
 as required.
 
 This of courses generalizes to multiple dimensions.
+
+It is also possible to define a line between two points as
+
+\[\lambda \vec{OA} + (1-\lambda) \vec{OB},\,\, 0 \leq \lambda \leq 1\]
+
+
+* Properties
+
+** Shortest distance
+
+It is possible to show the shortest distance between two lines as the length of the [[id:32883EF4-AA23-4DF6-83CE-3C6ECF64D8BF][Projection]] $|\text{proj}_n (a_1 - a_2)|$, where:
+
+- $a_1 \in L_1$
+  
+- $a_2 \in L_2$
+
+- $n$ is perpendicular to both $L_1$ and $L_2$ (easily achivable via the [[id:A758DE8C-564B-4F3B-89ED-5121EB1A7928][Cross product]]).
 
 
 

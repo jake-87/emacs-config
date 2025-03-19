@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       0ED124C7-EF23-4944-B567-90DF6E007D7E
+:END:
+#+title:Bezout's identity, number theory
+
+* Definition
+
+Bezout's identity states that if you have some $GCD(a,b)$, it can always be written as $ax + by,\, x,y \in \mathbb{Z}$.
+
+
+* Reversed:
+
+Given $ax + by = c$, $x,y$ only exist (as integers) if $GCD(a,b) | c$.

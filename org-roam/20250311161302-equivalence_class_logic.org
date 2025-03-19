@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       A01E15E8-CE66-4F62-90B9-B8C36DBD5F9F
+:END:
+#+title:Equivalence class, logic
+
+
+* Definition
+The equivalence class $[a]$ of some element $a$ is all the elements $x$ for some [[id:21ED6F75-F44E-4BB9-B53D-D5B2D36C5134][Equivalence relation]] $R$, such that $R\,a\,x$.
+
+
+* Properties
+
+- Trivially, we have $x \in [x]$, as all [[id:21ED6F75-F44E-4BB9-B53D-D5B2D36C5134][Equivalence relation]]s are reflexive.
+  
+- If $x \simeq y$, then $[x] = [y]$.
+
+- Given a relation $\simeq$ on $X$, the equivalence classes of elements in $X$ [[id:DF7B95E8-73AF-4F60-8DB2-EB85E0727D69][Partition]] $X$.

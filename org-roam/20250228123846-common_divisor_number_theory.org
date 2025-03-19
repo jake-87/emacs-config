@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       36B3896E-EBE1-4452-97BA-D569A9D382F1
+:END:
+#+title:Common divisor, number theory
+
+A common divisor of $a,b$ is an integer $d$ such that $d|a$ & $d|b$.

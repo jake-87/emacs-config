@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       8723DA5E-2869-4188-9B85-AF6A77F5231F
+:END:
+#+title:Critical point, calculus
+
+* Definition
+
+Suppose $f$ is defined on $[a,b]$. We say that $c : [a,b]$ is a critical point for $f$ if one (or more) of the following hold:
+
+- $c$ is an endpoint $a$ or $b$ of the interval $[a,b]$.
+
+- $f$ is not differentiable at $c$
+
+- $f$ is differentiable at $c$ and $f'(c) = 0$.

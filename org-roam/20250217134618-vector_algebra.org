@@ -91,15 +91,9 @@ Therefore, $\vec{AB} = \vec{OB} - \vec{OA}$.
 
 ** More complex operations:
 
-The dot product $\bold{u} \cdot \bold{v}$ in R^n is defined as the sum
+- [[id:140317C3-BADC-448B-A856-9D82B1C99C38][Dot product, algebra]]
 
-\begin{align*}
-\bold{u} \cdot \bold{v} = \sum_{k = 1}^n \bold{u}_k \bold{v}_k
-\end{align*}
-
-
-This commutes how you'd expect of multiplication. Notably, it is not associative, as the output is a scalar, not a vector.
-Due to this, the dot product does not have an identity operation.
+Mention: [[id:E6AFD811-7C84-4D4A-BAC1-2C5F46C350E2][Cauchy-schwarz theorem, algebra]]
 
 *** Notable identities:
 
@@ -118,7 +112,7 @@ The dot product with any basis vector "isolates" that component:
 = 3
 \end{align*}
 
-$\bold{v} \cdot \bold{v} = |\bold{v}|^2$
+$\bold{v} \cdot \bold{v} = |\bold{v}|^2 \geq 0$
 
 This is observable from the definition of the dot product and of the magnitude operation.
 

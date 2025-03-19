@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       DC11600E-97A0-4110-8464-0B16EBE17298
+:END:
+#+title:Orthogonal set, algebra
+
+
+The vectors $v_0, \dots, v_n$ form an Orthogonal set if they are mutually orthogonal, ie $\forall i\, j, v_i \cdot v_j = 0$.
+
+Furthermore, if they all have length 1, we say they are orthonormal.

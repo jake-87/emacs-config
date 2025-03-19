@@ -3,8 +3,10 @@
 :END:
 #+title:Inverse function
 
+* Definition
+
 The inverse of a function $f : A \to B$, written $f^{-1} : B \to A$, is defined such that whenever $f(a) = b$, $f^{-1}(b) = a$.
 
 e.g. The inverse of $f(x) : \mathbb{R}^{+} \to \mathbb{R} = \sqrt{x}$ is $f^{-1}(x) = x^2$.
 
-
+The inverse is only defined when $f$ is a bijection from $\text{Dom}(f)$ to $\text{Range}(f)$. (Or equivalently, that $f$ is injective).

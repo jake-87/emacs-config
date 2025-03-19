@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       43C017CD-2092-4A2C-83F1-E6F3D4688E40
+:END:
+#+title:Domain, function
+
+
+The domain of a function is the "input space". For the function $f : A \to B$, the domain is $A$.
+
+The natural domain of a function is the largest possible domain such that every input is valid.

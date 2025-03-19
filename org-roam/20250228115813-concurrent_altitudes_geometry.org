@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       377B1627-CC23-4DFC-8EF8-9895CFDAA6FB
+:END:
+#+title:Concurrent altitudes, geometry
+
+
+We can show that the altitudes of a triangle are concurrent:
+
+
+        c
+
+    e       d
+        p
+
+a                b
+
+
+Solution. As shown in Figure 3, let the three vertices be A, B and C (coordinate vectors a, b,
+c), and let D and E be the points at which the altitudes from A and B intersect the opposite sides
+of the triangle. Finally, let P (coordinate vector p) be the point of intersection of the altitudes AD
+and BE.
+
+Then, we can prove the result by showing that P is also on the altitude from C to AB.
+Now, as P is on the altitude from A to the opposite
+side BC, we have that $AP$ is perpendicular to $BC$, and
+hence $(p - a) \cdot (c - b) = 0$.
+Similarly, we have $(p - b) \cdot (a - c) = 0$.
+
+Adding these and equating terms, we can show that $(p - c)\cdot(a - b) = 0$, therefore showing that $CP \cdot BA = 0$.
+Thus, CP is perpendicular to BA and P lies on the altitude from C to BA.
+

@@ -1,0 +1,124 @@
+:PROPERTIES:
+:ID:       45478C9D-B665-4BFC-820F-D0CAA3EC050C
+:END:
+#+title:Linear congruence, number theory
+
+
+* Definition
+A linear congruence is some equation of the form $ax \equiv b \mod m$. ([[id:6854CE29-D85E-4448-830B-27531A7BBF40][Modular arithmatic]]).
+
+
+* Solving
+
+** Inverses
+
+If $a$ and $m$ are [[id:5A513249-9D00-4056-B5DC-5607BA69E2C6][Coprime]] then we can solve this utilizing a modular inverse denoted $a^{-1}$, with $aa^{-1} \equiv 1 \mod m$.
+(otherwise, the modular inverse doesn't exist)
+
+We can therefore do
+
+\begin{align*}
+ax &\equiv b &\mod m
+\\
+aa^{-1}x &\equiv ba^{-1} &\mod m
+\\
+x &\equiv ba^{-1} &\mod m
+\end{align*}
+
+
+Giving all solutions to the linear conguence, $\mod m$.
+
+For example, if we wish to find solutions to $3x \equiv 5 \mod 7$, we have that $3$ and $7$ are [[id:5A513249-9D00-4056-B5DC-5607BA69E2C6][Coprime]], so by finding a modular inverse:
+
+$3 \times 5 = 15 \equiv 1 \mod 7$. Therefore:
+
+
+\begin{align*}
+3x &\equiv 5 &\mod 7
+\\
+5\times 3x &\equiv 5 \times 5 &\mod 7
+\\
+x &\equiv 25 &\mod 7
+\\
+x &\equiv 4 &\mod 7
+\end{align*}
+
+Therefore the general solutions are $x = 7n + 4$.
+
+** Otherwise
+
+Easier way: If $GCD(a, m) = d \neq 1$, then there are two cases:
+
+- $d | c$ : Divide through by $d$, producing something that can be solved via inverses. Remember to go back and add up all the solutions again!
+  1. this is because if you have $x \equiv 3 \mod 5$, if you take that to $\mod 10$ you now have both $x \equiv 3$ and $x \equiv 8$.
+
+- $d \not | \ c$ : No solutions.
+
+
+Simplify best we can with rules of modular arithmatic, then reduce.
+
+For $ax \equiv c \mod m$:
+
+1. Find $d = GCD(a, m)$. If $d \not | \ c$, there is no solution.
+2. If $d|c$, then solutions exist, and there are exactly $d$ solutions in $\mod m$.
+3. To find them:
+   - Find integers $x'$ and $y'$ satisfying $ax' + my' = d$, by applying the [[id:94BAEEE0-EA8E-4D8D-8A3E-01B647A2AF73][Euclidian algorithm]] to $a$ and $m$, working backwards.
+   - The general solution is then $x \equiv \frac{c}{d}x' \mod \frac{m}{d}$.
+   - If $d > 1$ and we care about all the solutions, take the solution $\frac{c}{d}x'$ and repeatedly add $\frac{m}{d}$, up to $k = d - 1$.
+   - Therefore, all the solutions are $x \equiv \frac{c}{d}x' + k\frac{m}{d}, k \in \{ 0,1,\dots,d-1\}$
+
+Example:
+
+\begin{align*}
+6x &\equiv 4 &\mod 7
+\\
+-1x &\equiv 4 &\mod 7
+\\
+x &\equiv -4 &\mod 7
+\\
+x &\equiv 3 &\mod 7
+\end{align*}
+
+
+Example 2:
+
+$29x \equiv 11 \mod 101$
+
+[[id:94BAEEE0-EA8E-4D8D-8A3E-01B647A2AF73][Euclidian algorithm]]:
+
+\begin{align*}
+101 &=3*29 + 14
+\\
+29 &= 2 * 14 + 1
+\end{align*}
+
+Therefore $GCD(101, 29) = 1$ - there is one solution.
+
+In reverse:
+
+\begin{align*}
+1 &= 29 - 2*14
+\\
+1 &= 29 - 2*(101 - 3*29)
+\\
+1 &= 7 * 29 - 2*101
+\\
+11 &= 77 * 29 - 22*101
+\\
+\therefore&
+\\
+11 &\equiv 77*29 - 22*101 &\mod 101
+\\
+29*77 &\equiv  11&\mod 101
+\\
+\therefore&
+\\
+x &\equiv 77 &\mod 101
+\end{align*}
+
+
+
+
+
+
+

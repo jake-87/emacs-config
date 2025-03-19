@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       1E50E745-4B5D-4EF7-A121-B594040BBD0A
+:END:
+#+title:Codomain, function
+
+The co-domain of a function is the output space. For the function $f : A \to B$, the codomain is $B$.

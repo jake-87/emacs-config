@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       778FAD19-D314-43B6-9653-39777933DFE7
+:END:
+#+title:L'hopital's rule, calculus
+
+
+If $f,g$ are differentiable in the neighbourhood of some $a \in \mathbb{R$.
+
+If:
+
+- $f(x) \to 0$ and $g(x) \to 0$ as $x \to a$, or
+
+- $f(x) \to \infty$ and $g(x) to \infty$ as $x \to a$
+
+
+then:
+
+\[\lim_{x\to a}} \frac{f(x)}{g(x)}} = \lim_{x\to a}} \frac{f'(x)}{g'(x)}}\]
+
+assuming the limit exists.

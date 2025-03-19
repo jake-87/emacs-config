@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       9B8289A0-B985-41B5-B2CE-0230B945A109
+:END:
+#+title:Polynomial, algebra
+
+A function $f : \mathbb{R} \to \mathbb{R}$ is considered a polynomial if it takes the form
+
+\[
+f(x) = a_nx^n + a_{n-1}x^{n-1} + \dots + n_1x^1 + n_0x^0
+\]
+
+and the following are true:
+- $n \in \mathbb{N}$
+  
+- $a_n, a_{n-1}, \dots, a_0 \in \mathbb{R}$
+  
+- $a_n \neq 0$
+
+
+sum/product of roots:
+
+by ones: -b/a
+by twos: c/a
+by threes: -d/a
+by fours: e/a
+etc

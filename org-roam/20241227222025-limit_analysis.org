@@ -3,13 +3,68 @@
 :END:
 #+title:Limit, Analysis
 
-The simplest **Limit** of some function f : ℝ → ℝ at a value k:
+** Defintion of a limit:
+*** Limits at infinity:
+
+If f(x) gets infinitely close to $L \in \mathbb{R}$ as $x \to \infty$, then we write
+
+\[\lim_{x \to \infty}f(x) = L\]
+
+If instead f(x) approaches $\infty$, we write that the limit does not exist.
+
+Clearly, if $x \to \infty \implies f(x) \to \infty$, then
+\[\lim_{x \to \infty}\frac{1}{f(x)} = 0\]
+
+We say a function $f$ has a limit at $\infty$ equaling $L$ if that for all $\epsilon > 0$, there exists $N > 0$ such that
+
+$\forall x > N, |f(x) - L| < \epsilon$
+
+*** Limits at a point:
 
 \[
 \lim_{x\to k}f(x) = L
 \]
 
-is said to be L as x approaches k, if, for every ϵ > 0, there exists a δ > 0 s.t. for all x ∈ ℝ, (0 < |x - k| < δ) ⇒ ( 0 < f(x) - L < ϵ). In other words, it's essentially a "squeeze" saying that for every bit of closeness to the y value, you can get closer on the x axis
+is said to be L as x approaches k, if, for every ϵ > 0, there exists a δ > 0 s.t. for all x ∈ ℝ, (0 < |x - k| < δ) ⇒ (0 < f(x) - L < ϵ). In other words, it's essentially a "squeeze" saying that for every bit of closeness to the y value, you can get closer on the x axis.
+
+\[
+\lim_{x \to k}f(x) = L \equiv \forall \epsilon > 0, \exists \delta > 0, \forall x \in \mathbb{R}, (0 < |x - k| < \delta) \implies (0 < |f(x) - L| < \epsilon)
+\]
+
+
+** Limit calculations
+
+If the respective limits exist, then limits can be distributed around addition/other similar operations:
+
+\[\lim(f(x) + g(x)) = \lim f(x) + \lim g(x)\]
+
+** Theorems:
+*** Pinch/squeeze theorem: [[id:642F47BE-AC8A-4D6A-ABB0-98238E29F7A8][Pinch theorem, analysis]]
+
+
+
+** Example of usage:
+
+We will prove that $\lim_{x\to 1}(2x + 1) = 3$.
+
+This is equivalent to
+
+$\forall \epsilon > 0, \exists \delta > 0, \forall x \in \mathbb{R}, (0 < |x - 1| < \delta) \implies (0 < |2x + 1 - 3| < \epsilon)$.
+
+To find delta, we start with $0 < |2x - 2| < \epsilon$.
+
+We can then note:
+\begin{align*}
+0 <\, |2x& - 2| < \epsilon
+\\\therefore
+-\epsilon <\, 2x& - 2 < \epsilon
+\\\therefore
+-\frac{\epsilon}{2} <\, x& - 1 < \frac{\epsilon}{2}
+\\\therefore
+0 < |x& - 1| < \frac{\epsilon}{2}
+\end{align*}
+
+Therefore, if we choose $\delta = \frac{\epsilon}{2}$, we will always have our required conditions.
 
 
 

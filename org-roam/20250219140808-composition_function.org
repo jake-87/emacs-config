@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       4CA3D659-88BB-4287-A173-544A8431C8DC
+:END:
+#+title:Composition, function
+
+Function composition, written $f \circ g$ for some $f$ and $g$, is defined as $(f \circ g)(x) = f(g(x))$.
+If
+\begin{align*}
+f &: A \to B
+\\
+g &: B \to C
+\end{align*}
+
+then naturally
+
+\begin{align*}
+\text{Range}(g) \subseteq \text{Dom}(f)
+\end{align*}
+

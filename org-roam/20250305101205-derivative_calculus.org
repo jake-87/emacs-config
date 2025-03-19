@@ -1,0 +1,54 @@
+:PROPERTIES:
+:ID:       3C6287F9-231F-4A36-B58B-339228522F90
+:END:
+#+title:Derivative, calculus
+
+
+* Definition
+
+The *derivative* is a method of calculating the slope of the tangent at a point.
+
+For some continuous $f : (a,b) \to \mathbb{R}$, we say that $f$ is differentiable at $x$ if
+
+\[\lim_{h \to 0}\frac{f(x + h) - f(x)}{h}\]
+
+exists.
+
+We denote this:
+
+- $f'(x)$
+  
+- $\dv{f}{x}(x)$
+  
+- $\dv{x}f(x)$
+
+* Definition part 2
+
+The derivative function of a function $f : (a,b) \to \mathbb{R}$ is a function $f' : (a,b) \to \mathbb{R}$ such that:
+
+\(\forall x \in (a,b), f'(x) = \lim_{h\to 0}\frac{f(x + h) - f(x)}{h}\)
+
+
+* Arithmatic rules
+
+Suppose $f$ and $g$ are differentiable at $x$. Then:
+
+- \[(f + g)' = f' + g'\]
+
+- \[(fg)' = f'g + g'f\]
+
+- $\left(\frac{f}{g}\right)' = \frac{f'g - g'f}{g^2}$
+
+
+
+* Chain rule
+
+If $g$ is differentiable at $x$, and $f$ at $g(x)$, then
+
+\[(f \circ g)'(x) = f'(g(x))g'(x)\]
+
+
+
+* Extra stuff
+
+Differentiability implies [[id:67C73355-B947-423C-8847-FD4421206BD2][Continuity]], but not the converse.

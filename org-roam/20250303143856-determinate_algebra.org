@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       5FA082AA-5464-4C1B-91F5-52DF37538E6E
+:END:
+#+title:Determinant, algebra
+
+Determinate:
+The determinate of a matrix is a calculation that does useful stuff. idk.
+
+*** 2d:
+
+\[\det\begin{bmatrix} a_1 & a_2 \\ b_1 & b_2 \end{bmatrix} = a_1 b_2 - a_2 b_1\]
+
+*** 3d:
+
+\begin{align*}
+\det\begin{bmatrix} e_1 & e_2 & e_3 \\ a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3 \end{bmatrix}
+= e_1 \det\begin{bmatrix} a_2 & a_3 \\ b_2 & b_3 \end{bmatrix} +
+e_2 \det\begin{bmatrix} a_1 & a_3 \\ b_1 & b_3 \end{bmatrix} +
+e_3 \det\begin{bmatrix} a_1 & a_2 \\ b_1 & b_2 \end{bmatrix}
+\end{align*}
+
+Note the pattern of barring off the column you're in
+
+* Properties
+
+We have cool stuff like
+
+\[\det\begin{bmatrix} \lambda a_1 & \lambda a_2 \\ \mu b_1 & \mu b_2 \end{bmatrix}
+= \lambda\mu\det \begin{bmatrix} a_1 & a_2 \\ b_1 & b_2 \end{bmatrix}\]

@@ -1,0 +1,34 @@
+:PROPERTIES:
+:ID:       0C665048-2AD0-48BA-B783-44C045FB46AB
+:END:
+#+title:Absolute value
+
+The absolute value is a specialization of distance to the real numbers.
+
+It is defined by cases:
+
+\begin{align*}
+|x| =
+\begin{cases}
+x \geq 0 = x\\
+x < 0 = -x
+\end{cases}
+\end{align*}
+
+** Properties:
+
+- $|-x| = |x|$
+
+- $|xy| = |x||y|$
+
+- $|x + y| \leq |x| + |y|$ (Triangle inequality)
+
+- $|x| = \sqrt{x^2}$
+
+- $|x|^2 = x^2$
+
+- for $a > 0$:
+
+  -- $|y| < a$ is equivalent to $-a < y < a$
+
+  -- $|y| > a$ is equivalent to $y < -a \lor y > a$.

@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       94BAEEE0-EA8E-4D8D-8A3E-01B647A2AF73
+:END:
+#+title:Euclidian algorithm, number theory
+
+
+* Definition
+
+The euclidian algorithm is an algorithm for finding the [[id:CECCD9D4-76B7-4FF4-BCA7-DFE473E2ECCC][Greatest common divisor]] of two numbers.
+
+TLDR:
+
+to find GCD(a,b) we do:
+
+\begin{align*}
+a &= q_0b + r_0
+\\
+b &= q_1r_0 + r_1
+\\
+\vdots
+\\
+r_{n-2} &= q_{\dots}r_{n-1} + r_{n}
+\\
+r_{n-1} &= q_{\dots}r_n + 0
+\\
+\therefore
+\text{GCD}(a,b) &= r_n
+\end{align*}
+
+
+

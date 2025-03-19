@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       84C9E6FC-9EF3-4C11-B260-7C402F50C24C
+:END:
+#+title:Basis vectors, algebra
+
+A set of basis vectors is a collection of vectors $e_0, \dots, e_n$ such that:
+
+- All are linearly independent (for all $i, j$, $e_i \cdot e_j = 0$)
+- All are unit length.
+
+  In other words, they form an [[id:DC11600E-97A0-4110-8464-0B16EBE17298][Orthonormal set]].
+
+We can move from one set of basis vectors to another with the help of the [[id:140317C3-BADC-448B-A856-9D82B1C99C38][Dot product]].
+
+If we are rebasing to vectors like so:
+
+\begin{align*}
+\begin{pmatrix} 2 \\ -1 \end{pmatrix}
+= \lambda\begin{pmatrix} \frac{1}{\sqrt{2}} \\ \frac{1}{\sqrt{2}} \end{pmatrix} + \mu\begin{pmatrix} \frac{1}{\sqrt{2}} \\ -\frac{1}{\sqrt{2}} \end{pmatrix} 
+\end{align*}
+
+Because the two basis vectors are linearly independent, we can dot product through by one and then the other to obtain the coefficients lambda and mu.
+
+

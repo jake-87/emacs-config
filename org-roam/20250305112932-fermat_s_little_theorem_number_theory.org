@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       BFE9BCAB-4C18-40B7-ADA2-CC1ADAEB7E86
+:END:
+#+title:Fermat's little theorem, number theory
+
+
+* Definition
+
+For any prime $p$, and any integer $a$ such that $p\not |\, a$, we have $a^{p-1} \equiv 1 \mod p$.

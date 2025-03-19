@@ -1,0 +1,20 @@
+
+#+title:Matrix, algebra
+
+* Definition:
+A matrix is some rectangular collection of elements, eg:
+
+\begin{align*}
+&\begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \end{bmatrix}
+\\\\
+&\begin{bmatrix} 1 & 2 \\ 3 & 4 \\ 5 & 6 \end{bmatrix}
+\end{align*}
+
+
+* Operations:
+- [[id:5FA082AA-5464-4C1B-91F5-52DF37538E6E][Determinate, algebra]]
+
+
+
+
+

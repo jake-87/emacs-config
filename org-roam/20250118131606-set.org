@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID:       43D0127C-D7D3-4B9E-A1D7-B681CEAD90D4
 :END:
-#+title:Set
+#+title:Set, math
 
 * A set is an unordered collection of elements.
 ** Operations include:
@@ -20,11 +20,13 @@ Subtraction: $A - B \equiv \{ a \, | \, a \in A \land a \notin B \}$
 
 The empty set: $\emptyset$, containing no elements
 
-Universal set: $\text{Univ} \equiv A \cap A^c$
+Universal set: $\mathcal{U} \equiv A \cap A^c$
 
 Cardinality (number of elements in set): $|A|$
 
 Equality: $A = B \equiv A \subseteq B \land  B \subseteq A$
+
+Symmetric difference: $A \ominus B \equiv \{x\, |\, x \in A \land x \in B \land x \notin (A \cup B)\}$
 
 Cartesian product: $A \times B \equiv \{(a,b) \, | \, a \in A \land b \in B\}$
 
@@ -49,9 +51,19 @@ $\overline{\bigcup S_n} = \bigcap{\overline{S_n}}$
 
 *** Cardinality
 
+**** Inclusion Exclusion principle:
+
 $|A \cap B| = |A| + |B| - |A \cup B|$
 
 $|A \cup B| = |A| + |B| - |A \cap B|$
+
+Similarly:
+
+$| A \cup B \cup C| = |A| + |B| + |C| - (|A \cap B| + |A \cap C| + |B \cap C|) - |A \cap B \cap C|$
+
+and so on, alternating between $+$ and $-$.
+
+**** Cartesian products:
 
 $|A \times B| = |A| \cdot |B|$
 
@@ -72,3 +84,28 @@ $s \in S \implies s \in S \cap A$.
 But not always intersection:
 
 $s \in A \land s \in B \implies s \in A \cup B$.
+
+
+** Definitions
+
+*** Disjoint: $A \cap B = \emptyset$
+
+*** Pairwise Disjoint:
+
+For all $A_1, A_2, \dots, A_n$, and all $i,j\ \text{s.t.}\  j \not = i$, $A_i \cap A_j = \emptyset$. In other words, all possible pairs are disjoint.
+
+*** Parition:
+
+If $A_1, \dots, A_n$ are pairwise disjoint, and $A_1 \cup A_2 \cup \dots \cup A_n = B$, $A_1, \dots A_n$ partition $B$.
+
+Common examples:
+
+- $A$ and $A^c$ parition $\mathcal{U}$
+
+- $A$ and $B - A$ paritions $A \cup B$
+
+- $A \cap B$ and $A \ominus B$ parition $A \cup B$
+
+- $A \cap B$ and $A - B$ parition $A$.
+
+  

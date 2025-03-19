@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       5A513249-9D00-4056-B5DC-5607BA69E2C6
+:END:
+#+title:Coprime, number theory
+
+Two unequal numbers are coprime if their only [[id:36B3896E-EBE1-4452-97BA-D569A9D382F1][Common divisors]] are 1 & -1. For example, 8 and 15 are coprime.
+
+[[id:B3406BAF-22E1-447A-96B7-96F88FE417C6][Prime numbers]] are trivially coprime with every other number.

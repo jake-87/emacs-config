@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID:       A35CBBF0-C89B-43C9-B85B-02CBFA93D661
+:END:
+#+title:Divides, number theory
+
+
+* Defintion:
+
+We say "a divides b" and write $a | b$ if there exists some k such that $b = ak$.
+
+Examples:
+- $3 | 15, k = 5$
+- $0 | 0, k \in \mathbb{Z}$.
+
+
+* Properties:
+
+$a | a$ for all $a$, as $a = ka$ with k = 1.
+
+
+For all $a,b,c$, if $a|b$ and $b|c$ then $a|c$.
+Proof:
+$a|b$ implies we have a $w$ s.t. $b = aw$. Likewise, we have $c = qb$. Therefore, $c = q(aw) = (qw)a$, thereore $a|c$ for $k = qw$.
+
+
+For $a,b,c$, $a|b$ and $a|c$, then $a|(bx + cy)$ for all $x, y$.
+Proof:
+$bx + cy = (aq)x + (aw)y = a(qx + wy)$, therefore divides with $k = (qx + wy)$.
+
+For $a,b,q,p$, if $p$ and $q$ are [[id:5A513249-9D00-4056-B5DC-5607BA69E2C6][Coprime]], and $q|a$ and $q|b$, then $a\equiv b \mod p \iff \frac{a}{q} \equiv \frac{b}{q} \mod p$.
+
+For primes $p,q$, we have that if $a|p$ and $a|q$, $a|pq$. This can be shown with the [[id:E711504A-75ED-47B4-8274-383AA2293C15][Fundimental theorem of arithmetic]].

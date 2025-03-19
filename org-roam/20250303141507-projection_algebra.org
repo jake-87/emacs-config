@@ -1,0 +1,64 @@
+:PROPERTIES:
+:ID:       32883EF4-AA23-4DF6-83CE-3C6ECF64D8BF
+:END:
+#+title:Projection, algebra
+
+* Definition
+
+The projection of a [[id:32A7773E-6EFF-42D4-84F9-F6A0C41366D1][Vector]] onto another is the vector in the direction of the projected with the correct "scaled length".
+
+
+           B^>
+
+
+
+A          P     V->
+
+
+The projection of $\bold{b}$ onto $\bold{v}$, written
+
+\[\text{proj}_v b \]
+
+is defined as
+
+\begin{align*}
+\text{proj}_v b = \left(\frac{b \cdot v}{v \cdot v}\right) v
+\end{align*}
+and several other equivalent methods.
+
+* Extended definition
+It is the unique solution to $\vec{AP} \perp \vec{PB}$:
+
+\begin{align*}
+AP \cdot PB &= 0
+\\
+(\lambda v) \cdot (b - \lambda v) &= 0
+\\
+v \cdot b - \lambda v\cdot v &= 0
+\\
+v \cdot b &= \lambda v \cdot v
+\\
+\lambda &= \frac{b \cdot v}{v \cdot v}
+\end{align*}
+
+Which we then scale in the direction of $v$ in order to obtain the projection.
+
+
+* Proof of shortest distance
+
+For some point $b$ and line $\lambda v$, it is easy to show that the projection is the shortest possible distance.
+
+Consider:
+
+
+         B
+
+
+
+A        P        Q  v->
+
+for any $Q = \lambda v > P$.
+
+Clearly, $|BP|^2 + |PQ|^2 = |BQ|^2$.
+
+Therefore, $|BP| \leq |BQ|$.

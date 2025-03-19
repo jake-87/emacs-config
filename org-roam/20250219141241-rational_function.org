@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       33177F28-F9D6-4835-8789-574D40EABFC4
+:END:
+#+title:Rational, function
+
+A function is considered rational if it is the division of [[id:9B8289A0-B985-41B5-B2CE-0230B945A109][Polynomials]].
+
+For example, if $g_1$ and $g_2$ are polynomials, then $f = \frac{g_1}{g_2}$ is also a polynomial.

@@ -1,0 +1,35 @@
+:PROPERTIES:
+:ID:       0D491225-76C7-43FB-BACB-F8AA23BD9C22
+:END:
+#+title:Mean value theorem, calculus
+
+* Definition
+
+Let $f$ be a function $[a,b] \to \mathbb{R}$, [[id:67C73355-B947-423C-8847-FD4421206BD2][Continuous]] on $[a,b]$ and differentiable on $(a,b)$. Then, there exists some $c \in (a,b)$ such that
+
+\[f'(c) = \frac{f(b) - f(a)}{b - a}\]
+
+Essentially, there is some point where the slope is equal to the slope of the line between the two points.
+
+This is a generalization of [[id:B54D8FE7-72AA-4A53-A930-A34AF9E51024][Rolle's theorem, calculus]], which assumes the RHS to be 0.
+
+* Proof:
+
+Suppose $f$ is continuous on $[a,b]$ and diffentiable on $(a,b)$.
+Then, let
+
+\[g(x) = f(x) - \left( \frac{f(b) - f(a)}{b - a}(x-a)+f(a) \right)\]
+
+One can check that $g$ is similarly continuous and differentiable, and that
+$g(a) = g(b) = 0$.
+
+Then, by [[id:B54D8FE7-72AA-4A53-A930-A34AF9E51024][Rolle's theorem]], there is a $c \in (a,b)$ such that $g'(c) = 0$,
+and therefore via expanding the definition of $g$,
+
+\[f'(c) - \frac{f(b) - f(a)}{b - a} = 0\]
+
+and therefore
+
+\[f'(c) = \frac{f(b) - f(a)}{b - a}\]
+
+as required.

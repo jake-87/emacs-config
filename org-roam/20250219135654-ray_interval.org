@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       636D5D57-52A8-47A2-BE05-D97CE9E6C6C4
+:END:
+#+title:Ray, Interval
+
+A "Ray" in [[id:0C7F6400-D50D-4ADC-B130-B3AA9EF28415][Interval notation]] is something with an open infinity bound on one side. The following are all rays:
+
+- $(1, \infty)$
+
+- $[0, \infty]$
+
+- $(-\infty, \infty)$

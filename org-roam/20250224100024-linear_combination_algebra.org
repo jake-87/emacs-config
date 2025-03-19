@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       A6AE08EF-47FF-4336-8C24-FDA08B3C8F8C
+:END:
+#+title:Linear combination, algebra
+
+A linear combination of vectors is, for some set of vectors $v_1, v_2, \dots, v_n$, the set
+
+\[u = \lambda_1 v_1 + \lambda_2 v_2 + \dots \lambda_n v_n\]

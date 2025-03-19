@@ -1,0 +1,40 @@
+:PROPERTIES:
+:ID:       CECCD9D4-76B7-4FF4-BCA7-DFE473E2ECCC
+:END:
+#+title:Greatest common divisor, number theory
+
+* Definition
+The greatest [[id:36B3896E-EBE1-4452-97BA-D569A9D382F1][Common divisor]], $\text{GCD}(n,k) = d$ is the largest number $d \in \mathbb{N}$ that divides both $n$ and $k$.
+
+Conditions:
+
+1) $d | n$ & $d | k$
+2) For all $c \in \mathbb{N}$, if $c|n$ & $c|k$, then $c \leq d$.
+
+
+If prime factorizations are known, the GCD can be found by simply extracting "common" prime factors.
+
+e.g. $\text{GCD}(108, 72) = \text{GCD}(2^2\times 3^3, 2^3 \times 3^2) = 2^2 \times 3^2 = 36$.
+
+
+Alternate defintion:
+
+Conditions:
+1) $d | n$ & $d | k$
+2) For all $c \in \mathbb{N}$, if $c|n$ & $c|k$, then $c | d$.
+
+
+* Properties
+
+** GCD->GCD 1
+
+If $\text{GCD(a,b) = d}$, then $\text{GCD}(\frac{a}{d},\frac{b}{d}) = 1$.
+
+Proof: not hard
+
+
+** GCD [[id:A35CBBF0-C89B-43C9-B85B-02CBFA93D661][Divides]]
+
+If $k|mn$ and \(GCD(k,n) = 1\), then $k|m$.
+
+   

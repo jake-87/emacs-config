@@ -1,0 +1,77 @@
+:PROPERTIES:
+:ID:       6854CE29-D85E-4448-830B-27531A7BBF40
+:END:
+#+title:Modular arithmatic, number theory
+
+
+* Definition:
+
+Arithmatic modulo $n$ is "wrapping arithmatic", where every operation is taken modulo $n$, where modulo is the remainder of division.
+
+For example, $11\equiv 5\mod 6$, as $\frac{11}{5} (= q + r) = 1*6 + 5$.
+
+If $a \equiv b \mod m$, then $a = km + b$ for some $k$.
+
+Equivalently,
+
+$a \equiv b \mod m \iff m|(a-b)$.
+
+* Properties
+
+- If $a \equiv b \mod m$, and $k \in \mathbb{Z}^+$ satifies $k|m$, then $a\equiv b \mod k$
+
+- If $a \equiv b \mod m$ and $c \equiv d \mod m$ then $a + c \equiv b + d \mod m$.
+
+- If $a \equiv b \mod m$ and $c \equiv d \mod m$ then \(ac \equiv bd \mod m\).
+
+- You can add something to both sides
+
+- You can multiply something by both sides
+
+- You can multiply something by both sides and by the modulo
+
+- If $ak \equiv bk \mod m$, and $m$ and $k$ are [[id:5A513249-9D00-4056-B5DC-5607BA69E2C6][Coprime]], then $a \equiv b \mod m$.
+
+- If $a^n \equiv b^n \mod m$, then $a \equiv b \mod m$.
+
+- If $a \equiv b \mod m$, and $GCD(a,b,m) = d \neq 1$, then $\frac{a}{d}\equiv\frac{b}{d} \mod \frac{m}{d}$
+
+- If $a\equiv b \mod m$, with $GCD(a,b) = d \neq 1$, but $d$ and $m$ are [[id:5A513249-9D00-4056-B5DC-5607BA69E2C6][Coprime]], then $\frac{a}{d}\equiv\frac{b}{d} \mod m$.
+
+* Reducing large powers
+
+** Finding a 1/(-1)-complex
+If $n^k \equiv q \mod m$, if we can find a lower power $n^\ell \equiv \pm 1 \mod m$, then we can reduce the problem to that times whatever is left.
+
+This is only possible if $n$ and $m$ are [[id:5A513249-9D00-4056-B5DC-5607BA69E2C6][Coprime]].
+
+e.g.:
+
+We wish to find $7^{1001} \mod 12$.
+
+We can note that $7^2 = 49 \equiv 1 \mod 12$. Therefore, if we rewrite: $(7^2)^{500} \times 7^1 \mod 12$
+
+Then we can reduce to $1^{500} \times 7^1 \mod 12 \implies 7 \mod 12$.
+
+Therefore, $7^{1001} \equiv 7 \mod 12$.
+
+** Cycles
+
+If we wish to find $3^{103} \mod 15$, we can observe that $\mod 15$, $3 \equiv 3^5 \equiv 3^9 \equiv \dots \equiv 3^{101} \equiv 3 \mod 15$.
+
+Therefore, we rewrite to $3^{101} \times 3^2 \equiv 3 \times 9 \equiv 12 \mod 15$.
+
+** Divide and multiply
+
+For $3^{103} \mod 15$, we can reduce this to $3^{102} \mod 5$ so that they are [[id:5A513249-9D00-4056-B5DC-5607BA69E2C6][Coprime]], then multiply our final answer by $3$ again.
+
+** FLT:
+
+Useful: [[id:BFE9BCAB-4C18-40B7-ADA2-CC1ADAEB7E86][Fermat's little theorem]]
+This lets us simplify powers one less than a prime.
+
+* Linear conguences:
+
+- [[id:45478C9D-B665-4BFC-820F-D0CAA3EC050C][Linear congruence]]
+
+

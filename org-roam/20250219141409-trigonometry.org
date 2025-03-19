@@ -1,0 +1,58 @@
+:PROPERTIES:
+:ID:       B2C342F7-825A-4D66-8C53-D7FB1E35195B
+:END:
+#+title:Trigonometry
+
+Trig is the study of circles and triangles.
+
+** Functions:
+
+The basic functions of trig are $\sin$ and $\cos$.
+
+From there, $\tan$ is defined as $\frac{\sin}{\cos}$.
+
+The inverses are as follows:
+
+\begin{align*}
+\cot &= (\tan)^{-1}
+\\
+\csc &= (\sin)^{-1} = \text{cosec}
+\\
+\sec &= (\cos)^{-1}
+\end{align*}
+
+** Domains and ranges
+
+Sin and cos both have domains $\mathbb{R}$, and ranges $[-1, 1]$.
+
+Tan has domain $\mathbb{R} - (2n+1)\frac{\pi}{2}$, and range $\mathbb{R}$. (In other words, the domain is everything except odd multiples of $\pi/2$).
+
+Cosec has domain $\mathbb{R} - n\pi$, and range $\mathbb{R} - (-1, 1)$.
+
+Sec has domain $\mathbb{R} - (2n+1)\frac{\pi}{2}$, and range $\mathbb{R} - (-1, 1)$.
+
+** Even/Odd
+
+Sin and tan are odd.
+Cos is even.
+
+** Periods
+
+All of the sin and cos based function have a period of $2\pi$.
+
+All of the tan based functions have a period of $\pi$.
+
+** Identities:
+
+*** Basic:
+
+- $\sin^2 + \cos^2 = 1$
+
+- $1 + \tan^2 = \sec^2$
+
+- $\cot^2 + 1 = \csc^2$
+
+*** Half angle: [[id:EDAA7DE3-40B8-4D37-B5A9-BA161F0EF8EA][Half angle identities, Trig]]
+
+
+*** Rest: todo

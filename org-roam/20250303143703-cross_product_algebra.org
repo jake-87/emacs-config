@@ -1,0 +1,37 @@
+:PROPERTIES:
+:ID:       A758DE8C-564B-4F3B-89ED-5121EB1A7928
+:END:
+#+title:Cross product, algebra
+
+
+* Definition
+
+In $\mathbb{R}^3$, the cross product $\bold{a} \times \bold{b}$ is defined using the [[id:5FA082AA-5464-4C1B-91F5-52DF37538E6E][Determinant]].
+
+\[\bold{a} \times \bold{b} := \det\begin{bmatrix} \bold{i} & \bold{j} & \bold{j} \\ a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3 \end{bmatrix}\].
+
+
+Notably, the cross product is orthogonal to both $\bold{a}$ and $\bold{b}$, using the right hand rule to decide direction. This can be shown via the
+[[id:D2319C47-5D14-4B7D-B07C-729AFCC34C4A][Scalar triple product]].
+
+* Properties
+*** Identities
+
+- $\bold{a} \times \bold{a} = \bold{0}$
+
+- $\bold{a} \times (\bold{b} + \bold{c}) = \bold{a} \times \bold{b} + \bold{a} \times \bold{c}$
+
+- $(\bold{a} + \bold{b}) \times \bold{c} = \bold{a} \times \bold{c} + \bold{b} \times \bold{c}$
+
+- $\lambda \bold{a} \times \bold{b} = \lambda (\bold{a} \times \bold{b}) = \bold{a} \times \lambda \bold{b}$
+
+- $\bold{a} \times \bold{b} = -\bold{b} \times \bold{a}$, due to the right hand rule.
+
+
+*** Cardinality
+
+\[|a \times b| = |a||b|\sin\theta\], where $\theta \in [0, \pi]$ and $\theta$ is the angle between the two vectors.
+
+This is provable through some horrible algebra.
+
+Notably, this is the area of a parallelogram defined by $a$ and $b$.

@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       73681EB0-8441-4111-B0AA-51902DA5F300
+:END:
+#+title:Affine linear combination, vectors
+
+Any vector $\bold{x}$ can be written as an affine linear combination of two other vectors $\bold{a}$ and $\bold{b}$, as
+
+\[\bold{x} = s\bold{a} + t\bold{b}\]
+
+where $s + t = 1$.
+
+Let $a$ be the endpoint of $\bold{a}$, and so on for $b$ and $x$.
+
+Suppose $a$, $b$, and $x$ are colinear. If so, then $\bold{x}$ can be written as $\bold{x} = (1-t)\bold{a} + t\bold{b}$, which one may realize is the same as the formula
+for a [[id:D5A5CE83-1253-47D4-904E-AD73960FB818][Line]], varying over $t$!

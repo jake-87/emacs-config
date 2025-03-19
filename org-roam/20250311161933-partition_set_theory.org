@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       DF7B95E8-73AF-4F60-8DB2-EB85E0727D69
+:END:
+#+title:Partition, set theory
+
+* Definition
+
+Subsets $s_0, s_1, \dots, s_n$ paritition a set $S$ if $\bigcup_i s_i = S$, and for any $x,y \in s_0\dots s_n$, $x \cap y = \emptyset$.

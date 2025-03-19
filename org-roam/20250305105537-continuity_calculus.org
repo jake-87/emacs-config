@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       67C73355-B947-423C-8847-FD4421206BD2
+:END:
+#+title:Continuity, calculus
+
+A function $f : (a,b) \to \mathbb{R}$ is continuous on $(a,b)$ if for all $c \in (a,b)$, $lim_{x\to c}f(c) = f(x)$.

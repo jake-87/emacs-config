@@ -13,9 +13,6 @@
 
 (require 'prettify-utils "~/.emacs.d/prettify-utils.el")
 
-
-
-
 (add-hook 'vterm-mode-hook (lambda () (text-scale-decrease 2)))
 (set-face-attribute 'mode-line nil :height 60)
 (require 'ef-themes)
@@ -67,14 +64,16 @@
 
 (add-hook 'prog-mode-hook 'display-line-numbers-mode)
 (add-hook 'prog-mode-hook #'display-fill-column-indicator-mode)
-(use-package lsp-ui
-  :custom
-  (lsp-ui-sideline-enable t)
-  (lsp-ui-sideline-show-diagnostics t)
-  (lsp-ui-sideline-show-hover t)
-  (lsp-ui-sideline-delay 0.2))
-(use-package lsp-mode
-  :hook (c-mode . lsp))
+;;(use-package lsp-ui
+;;  :custom
+;;  (lsp-ui-sideline-enable t)
+;;  (lsp-ui-sideline-show-diagnostics t)
+;;  (lsp-ui-sideline-show-hover t)
+;;  (lsp-ui-sideline-delay 0.2))
+
+;; (use-package lsp-mode
+;;  :hook (c-mode . lsp))
+
 (setq-default abbrev-mode t)
 (add-hook 'after-init-hook 'global-color-identifiers-mode)
 (require 'rust-mode)
@@ -146,7 +145,22 @@
 (keymap-global-set "C-c n l" 'org-roam-buffer-toggle)
 (keymap-global-set "C-c n f" 'org-roam-node-find)
 
-(keymap-global-set "C-c n i" 'org-roam-node-insert)
+(defun org-roam-node-insert-commaless ()
+  (interactive)
+  (progn
+    (org-roam-node-insert)
+    (let ((pos (search-backward "," nil t)))  ; Find the previous comma
+      (if pos
+          (delete-region (1+ pos) (point))))
+    (insert "]]")
+    (kill-line)
+    )
+  )
+
+
+(keymap-global-set "C-c n i" 'org-roam-node-insert-commaless)
+(keymap-global-set "C-c n o" 'org-roam-node-insert)
+    
 (setq org-roam-completion-everywhere t)
 (org-roam-db-autosync-mode)
 (defun case-insensitive-org-roam-node-read (orig-fn &rest args)
@@ -171,6 +185,11 @@
             ;; #'org-roam-unlinked-references-section
             ))
 
+;; extra latex
+
+(setq org-latex-packages-alist '())
+(add-to-list 'org-latex-packages-alist '("" "physics" t))
+
 
 (tab-bar-mode)
 
@@ -188,7 +207,10 @@
 (add-hook 'tuareg-mode-hook #'merlin-mode)
 (add-hook 'caml-mode-hook #'merlin-mode)
 
+(vertico-mode)
+
 (global-corfu-mode)
+
 (setq corfu-auto t
       corfu-quit-no-match 'separator) ;; or t
 (setq corfu-auto-delay 0.2)
@@ -200,12 +222,38 @@
 		    ":/run/current-system/sw/bin/:/Users/jake/.nix-profile/bin:/nix/var/nix/profiles/default/bin"))
 	   (dolist (dir '("/run/current-system/sw/bin/" "/Users/jake/.nix-profile/bin" "/nix/var/nix/profiles/default/bin"))
 	     (add-to-list 'exec-path dir))
+	   (setq-default tab-width 4)
+       (setq-default c-basic-offset 4)
 	   ))
+
+(setq-default indent-tabs-mode nil)
+(setq indent-line-function 'insert-tab)
 
 (require 'vertico)
 (vertico-mode)
 
 (add-hook 'org-mode-hook #'visual-line-mode)
+
+
+(setq-default indent-tabs-mode nil)
+
+(add-hook 'prog-mode-hook 'electric-pair-mode)
+    
+;; (add-hook 'c-mode-hook 'lsp)
+;; (add-hook 'c++-mode-hook 'lsp)
+
+;; (add-hook 'c-mode-hook (lambda () lsp-ui-mode -1))
+
+;; (setq lsp-ui-doc-show-with-cursor nil)
+
+;; (setq lsp-ui-sideline-enable nil)
+;; (setq lsp-ui-sideline-show-hover nil)
+
+(require 'orderless)
+(setq completion-styles '(orderless basic)
+      completion-category-overrides '((file (styles basic partial-completion))))
+
+(isearch-mb-mode)
 
 (load-file (let ((coding-system-for-read 'utf-8))
                 (shell-command-to-string "agda-mode locate")))
@@ -215,8 +263,6 @@
 
 (add-hook 'org-mode-hook (lambda () (set-input-method "Agda")))
 (setq default-input-method "Agda")
-(isearch-mb-mode)
 
+    
 
-(add-hook 'c-mode-hook 'lsp)
-(add-hook 'c++-mode-hook 'lsp)

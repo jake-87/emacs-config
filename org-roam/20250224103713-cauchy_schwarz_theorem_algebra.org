@@ -1,0 +1,59 @@
+:PROPERTIES:
+:ID:       E6AFD811-7C84-4D4A-BAC1-2C5F46C350E2
+:END:
+#+title:Cauchy-schwarz theorem, algebra
+
+
+This inequality involving the [[id:32A7773E-6EFF-42D4-84F9-F6A0C41366D1][dot product]] holds: $| a \cdot b | \leq |a||b|$.
+It is only equality if $b$ is some multiple of $a$.
+
+We assume $b \neq 0$, as it naturally holds when $b = 0$.
+
+Consider
+\begin{align*}
+q(\lambda) &= |a - \lambda b|^2
+\\
+q(\lambda) &= (a - \lambda b) \cdot (a - \lambda b)
+\\
+q(\lambda) &= |a|^2 - 2\lambda a \cdot b + \lambda^2 |b|^2
+\end{align*}
+
+Which is then a quadratic in $\lambda$.
+
+The discriminant must then be non-positive, as we have that $|a - \lambda b|^2 \geq 0$, meaning the quadratic in $\lambda$ has
+no/one real solution(s). Hence:
+
+\begin{align*}
+0 &\geq (-2a\cdot b)^2 - 4|a|^2|b|^2 \implies
+\\
+0 &\geq 4(a \cdot b)^2 - 4|a|^2|b|^2
+\\
+&\implies -(a \cdot b)^2 \geq -(|a||b|)^2
+\\
+&= |a \cdot b| \leq |a||b|
+\end{align*}
+
+
+
+Can also prove via nice vector
+
+\[Z = \frac{X}{|X|} + \frac{Y}{|Y|}\]
+
+using $Z \cdot Z \geq 0$
+
+
+\[Z \cdot Z = 2 - 2\frac{|X \cdot Y|}{|X||Y|} \geq 0\]
+
+$\therefore |X \cdot Y| \leq |X||Y|$
+
+
+Another approach is to find the minimum of $q$ via calculus.
+
+
+
+
+
+
+
+
+

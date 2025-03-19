@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       E7918D19-5659-45FF-8362-6F6D704CEF60
+:END:
+#+title:Boolean algebra, algebra
+
+* Definition
+
+Let $\mathbb{B} = \{ 0, 1 \}$.
+
+Define $\oplus$ such that $0 \oplus 0 = 0,\ 0 \oplus 1 = 1,\ 1 \oplus 1 = 0$.
+
+Define $\otimes$ such that $0 \otimes 0 = 0,\ 0 \otimes 1 = 0,\ 1 \otimes 1 = 1$.
+
+Then $(\mathbb{B}, \oplus, \otimes)$ form a [[id:485F899A-90F5-4DE9-B720-750F78354AD7][Field]].
+
+
+* Notes
+
+This is equivalent to [[id:6854CE29-D85E-4448-830B-27531A7BBF40][Modular arithmatic]] $\mod 2$. 

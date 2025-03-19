@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       8E86CCB9-1092-4AAB-B0BE-14FE9DA4B6AE
+:END:
+#+title:Range, function
+
+The range of a function is a subset of the [[id:1E50E745-4B5D-4EF7-A121-B594040BBD0A][Codomain]] such that the range is only the values actually output by the function.
+
+For some $f : A \to B$, while the codomain is $B$, the range is the subset of $B$ that is possibly output by the function:
+
+\begin{align*}
+\text{Range}(f)& = \{ x \in B \, | \, f(y) = x \, , y \in A \}
+\\
+\text{Range}(f)& \subseteq \text{Codom}(f)
+\end{align*}
+
+
+
+

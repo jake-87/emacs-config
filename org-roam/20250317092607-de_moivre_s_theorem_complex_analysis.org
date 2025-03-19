@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       FBE9A852-58D8-4E55-A38C-4DD91D0F9166
+:END:
+#+title:De Moivre's theorem, complex analysis
+
+* Definition
+
+\[(\cos x + i\sin x)^n = \cos nx + i \sin nx\]

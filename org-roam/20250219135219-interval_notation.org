@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       0C7F6400-D50D-4ADC-B130-B3AA9EF28415
+:END:
+#+title:Interval notation
+
+Interval notation is notation for writing intervals (so profound!).
+
+( translates into an exclusive bound: $x \in (1, 2)$ is $1 < x < 2$.
+
+[ translates into an inclusive bound: $x \in [1, 2]$ is $1 \leq x \leq 2$.
+
+These can be mixed and matched as desired.
+If both bounds are exclusive, the interval is called "open", as it does not contain its endpoints.
+If both bounds are inclusive, the interval is called "closed", as it contains its endpoints.
+If there is a mix/match, the interval can be neither open nor closed. Fun!
+
+Mention: [[id:636D5D57-52A8-47A2-BE05-D97CE9E6C6C4][Ray, Interval]]

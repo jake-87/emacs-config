@@ -1,0 +1,41 @@
+:PROPERTIES:
+:ID:       7F0B19DC-0E34-4F9E-9833-43B70AAF2B84
+:END:
+#+title:Irrational number
+
+An irrational number is one that cannot be written as the quotient of two integers, $p$ and $q$, where $q \not = 0$.
+
+The set of all irrational numbers is also writable as $\mathbb{R} - \mathbb{Q}$.
+
+Generally proofs of irrationality are by contradition. Below is a proof that $\sqrt{2}$ is irrational.
+
+** Example proof:
+
+Suppose that $\sqrt{2}$ is rational, so it can be written as $\frac{p}{q}$, where $p$ and $q$ are integer share no common divisors.
+Now,
+\begin{align*}
+\sqrt{2} &= \frac{p}{q}
+\\\therefore
+2 &= \frac{p^2}{q^2}
+\\\therefore
+2q^2 &= p^2
+\end{align*}
+
+As $p^2$ is integer, and is it $2 \times q^2$, $p^2$ must be divisible by $2$. It can be shown, therefore, that $p$ must be divisible by $2$.
+
+Therefore, there exists some $r$ such that $p = 2r$, and therefore:
+
+\begin{align*}
+
+2q^2 &= p^2
+\\\therefore
+2q^2 &= (2r)^2
+\\\therefore
+2q^2 &= 4r^2
+\\\therefore
+q^2 &= 2r^2
+\end{align*}
+
+But, this implies that, as both $q$ and $r$ are integer, (and therefore so are $q^2$ and $r^2$), $q$ is also divisible by two.
+As we assumed at the start that $q$ and $p$ had no common factors, but we have now devised they share a common factor of $2$, we have reached
+a contradiction, proving that $\sqrt{2}$ is not rational.

@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       31D86D8B-1AC9-4894-904D-D8A921BD4D7D
+:END:
+#+title:Triangle inequality, algebra
+
+
+For two vectors $a, b$ in $\mathbb{R}^n$, $|a + b| \leq |a| + |b|$.
+
+
+Proof:
+
+\begin{align*}
+&|a + b|^2
+\\
+&= (a + b) \cdot (a + b)
+\\
+&= (a \cdot a) + 2*(a \cdot b) + (b \cdot b)
+\\
+&= |a|^2 + 2|a \cdot b| + |b|^2
+\\
+&\leq |a|^2 + 2|a||b| + |b|^2
+\\
+&= (|a| + |b|)^2
+\end{align*}
+
+

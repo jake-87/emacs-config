@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       DF553B7D-3702-45D4-B028-76A3AEE4A595
+:END:
+#+title:Maximum-minimum theorem, calculus
+
+
+* Definition
+
+If $f$ is continuous on $[a,b]$, then $f$ attains a maximum and minimum on $[a,b]$.
+
+i.e., there exist points $c,d \in [a,b]$ s.t. $\forall x \in [a,b], f(c) \leq f(x) \leq f(d)$.
+
+Closed interval is needed. So is continuity.
+
+* Noncontinuous definition
+
+Let $f$ be a real valued function on $[a,b]$.
+
+If $f(c) \leq f(d) \forall d \in [a,b]$,  then $c$ is the global minimum on that interval.
+
+Likewise for $\geq$.
+
+If $f$ has a maximum/minimum on $[a,b]$, then we say $f$ attains its global maximum/minimum on $[a,b]$.
+
+Notably, $f(c)$ must exist.
+
+
+* Notable stuff
+
+- [[id:B54D8FE7-72AA-4A53-A930-A34AF9E51024][Rolle's theorem]] is proven via this

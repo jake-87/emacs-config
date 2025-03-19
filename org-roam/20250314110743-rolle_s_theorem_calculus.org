@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID:       B54D8FE7-72AA-4A53-A930-A34AF9E51024
+:END:
+#+title:Rolle's theorem, calculus
+
+* Definition
+
+Let $f$ be a function $[a,b] \to \mathbb{R}$, [[id:67C73355-B947-423C-8847-FD4421206BD2][Continuous]] on $[a,b]$ and differentiable on $(a,b)$. Then, if $f(a) = f(b) = 0$, there exists a point $c$ such that $f'(c) = 0$.
+
+* Proof
+
+Three cases.
+
+** Case 1:
+
+Suppose $f(x) = 0$ (or any other constant). Clearly, any $c \in (a,b)$ can be chosen such that $f'(c) = 0$.
+
+** Case 2:
+
+Suppose there is a point $d$ in $(a,b)$ such that $f(d) > 0$.
+By the [[id:DF553B7D-3702-45D4-B028-76A3AEE4A595][Maximum-minimum theorem]], $f$ attains a maximum at some point $c \in [a,b]$.
+Moreoever, $c$ cannot be $a$ or $b$ as $f(d) > f(a) = f(b) = 0$.
+Hence $c$ lies in $(a,b)$, and as $f$ is differentiable on $(a,b)$ we have
+$c = \text{maximum of f in interval}$, and so $f'(c) = 0$.
+
+** Case 3:
+
+Same concept as case 2, except $f(d) \leq 0$.

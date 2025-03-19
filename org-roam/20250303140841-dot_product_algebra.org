@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       140317C3-BADC-448B-A856-9D82B1C99C38
+:END:
+#+title:Dot product, algebra
+
+The [[id:32A7773E-6EFF-42D4-84F9-F6A0C41366D1][Vector]] dot product $\bold{u} \cdot \bold{v}$ in R^n is defined as the sum
+
+\begin{align*}
+\bold{u} \cdot \bold{v} = \sum_{k = 1}^n \bold{u}_k \bold{v}_k
+\end{align*}
+
+The angle between two vectors $\theta \in [0, 2\pi]$ is $\theta = \cos^{-1}(\frac{a \cdot b}{|a||b|})$.
+
+Therefore, $a \cdot b = |a||b|\cos(\theta)$.
+
+In particular, vectors are orthogonal if $a \cdot b = 0$, $a \neq b \neq 0$. 
+
+This commutes how you'd expect of multiplication. Notably, it is not associative, as the output is a scalar, not a vector.
+Due to this, the dot product does not have an identity operation.
+
+Mention: [[id:E6AFD811-7C84-4D4A-BAC1-2C5F46C350E2][Cauchy-schwarz theorem, algebra]]

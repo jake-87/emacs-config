@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       7458DF15-780E-4CB9-89F4-1E675CF9946A
+:END:
+#+title:Partial order, logic
+
+* Definition
+
+A partial order is some [[id:7869330B-2FD9-4A88-A034-2E92E510AB4C][Relation]] that is:
+
+- [[id:4E236522-50FF-4523-93B2-81909A293C9D][Reflexive]]
+- [[id:F654A99C-402A-4472-9BCD-CD0CAEC0915F][Antisymmetric]]
+- [[id:125DBE22-A8AF-457E-B5BC-6FF88A8740A0][Transitive]]

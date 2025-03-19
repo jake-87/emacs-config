@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       E711504A-75ED-47B4-8274-383AA2293C15
+:END:
+#+title:Fundimental theorem of arithmetic, number theory
+
+Every number $n > 1$ can be written as a unique prime factorization, for primes $p_0, \dots, p_n$ and powers $a_0, \dots, a_n$:
+
+\[n = p_0^{a_0} \times p_1^{a_1} + \dots + p_n^{a_n}\].
+
+with $p_0 < p_1 < \dots < p_n$, and $a_0, \dots, a_n \in \mathbb{Z}_{\geq 0}$.

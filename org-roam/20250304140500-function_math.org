@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       226ED22E-D17E-4906-AA62-AD1E5AAA25B8
+:END:
+#+title:Function, math
+
+
+A function with [[id:43C017CD-2092-4A2C-83F1-E6F3D4688E40][Domain]] $P$ and [[id:1E50E745-4B5D-4EF7-A121-B594040BBD0A][Codomain]] $Q$ is notated:
+
+- $f : P \to Q$.
+
+- $f = x \mapsto x^2$
+
+- $f(x) = x^2$
+
+In order for $f$ to be considered a function, it must be defined for every element of the domain, and must have one
+element in the codomain for every element in the domain.
+Additionally, all outputs of the function must lie in the [[id:1E50E745-4B5D-4EF7-A121-B594040BBD0A][Codomain]].

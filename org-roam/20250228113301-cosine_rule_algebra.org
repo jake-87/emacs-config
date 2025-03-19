@@ -1,0 +1,40 @@
+:PROPERTIES:
+:ID:       D3871543-2532-4667-91FE-B7C4C7D8DA54
+:END:
+#+title:Cosine rule, algebra
+
+
+For vectors, the cosine rule states that
+$|b - a|^2 = |a| + |b| - 2|a||b|\cos\theta$.
+
+Equivalently:
+
+$|b - a|^2 = |a| + |b| - 2|a \cdot b|$.
+
+This can be proven from the expansion of $|b-a|^2$.
+
+
+This can also be proven geometrically, using the Pythagoras theorem.
+
+\[|AB|^2 = |BP|^2 + |AP|^2\]
+
+Imagine a triangle:
+
+          A
+   
+O       B P
+
+AOP = θ
+
+\[|BP| = ||OP| - |OB|| = ||a|\cos\theta - |b||\]
+
+\[|AP| = |a|\sin\theta\]
+
+\begin{align*}
+|AB|^2 &= |a|^2\cos^2\theta - 2|a||b|\cos\theta + |b|^2 + |a|^2\sin^2\theta
+\\
+&= |a|^2(\sin^2\theta + \cos^2\theta) + |b|^2 - 2|a||b|\cos\theta
+\\
+&= |a|^2 + |b|^2 - 2|a||b|\cos\theta
+\end{align*}
+

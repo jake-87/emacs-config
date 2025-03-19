@@ -1,0 +1,38 @@
+:PROPERTIES:
+:ID:       485F899A-90F5-4DE9-B720-750F78354AD7
+:END:
+#+title:Field, algebra
+
+* Definition
+
+A field is a structure containing the following:
+
+1. A non-empty set $\mathbb{F}$
+   
+2. An addition rule $+$ such that for all $x,y \in \mathbb{F}$, $a + b \in \mathbb{F}$
+   
+3. A multiplication rule $\times$ s.t. $x,y \in \mathbb{F} \implies a \times b \in \mathbb{F}$
+   
+4. Addition is associative: (a + b) + c = a + (b + c)
+5. Addition is commutative: a + b = b + a
+6. A zero element for addition exists: a + 0 = 0
+   
+7. An additive element $-a$ exists: $a + (-a) = 0$
+   
+8. Multiplication is associative
+9. Multiplication is commutative
+10. A one element for multiplication exists: $a \times 1 = a$
+    
+11. An inverse element for multiplication $a^{-1}$ exists: $a \times a^{-1} = 1$ 
+
+12. Addition distributes over multiplication: $(a + b) \times z = az + bz$.
+
+* Examples:
+
+- $\mathbb{Q}$
+
+- $\mathbb{R}$
+
+- $\mathbb{C}$ ([[id:0B7D76E8-19CF-4E5F-B3E8-85EDD6B193A3][Complex numbers]])
+
+- $\mathbb{B}$ ([[id:E7918D19-5659-45FF-8362-6F6D704CEF60][Boolean algebra]])

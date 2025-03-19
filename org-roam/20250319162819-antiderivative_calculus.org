@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       9920958D-DF1E-4D53-A4B8-01202B039620
+:END:
+#+title:Antiderivative, calculus
+
+* Defintiion
+
+Suppose $f$ is [[id:67C73355-B947-423C-8847-FD4421206BD2][Continuous]] on some open domain $I$.
+
+A function \(F\) is an antiderivative of $f$ if $F'(x) = f(x)$, for all $x \in I$.
+
+

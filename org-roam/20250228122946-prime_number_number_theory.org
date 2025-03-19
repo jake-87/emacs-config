@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       B3406BAF-22E1-447A-96B7-96F88FE417C6
+:END:
+#+title:Prime number, number theory
+
+
+A prime number is a number $>1$ with its only positive divisors being itself, and 1.
+
+Inversely, a composite number is any number that is not 0, not 1, and not prime.
+
+There are infinitly many prime numbers. This can be proven by the fact that if $n|k$, then $(n-1)\not |\, k$, and the factorial function. 
