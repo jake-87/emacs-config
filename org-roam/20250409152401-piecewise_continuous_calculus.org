@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       BDC7AA0D-16BB-4B5A-9E6D-8FFA6E0440C5
+:END:
+#+title:Piecewise continuous, calculus
+
+* Definition
+
+[[id:67C73355-B947-423C-8847-FD4421206BD2][Continuity]], except for perhaps a finite number of points.

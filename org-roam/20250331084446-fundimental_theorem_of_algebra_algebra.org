@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       14CE973E-55D2-473C-85D5-384B24C768AA
+:END:
+#+title:Fundimental theorem of algebra, algebra
+
+* Definition
+
+Every [[id:0B7D76E8-19CF-4E5F-B3E8-85EDD6B193A3][Complex]] [[id:9B8289A0-B985-41B5-B2CE-0230B945A109][Polynomial]] of degree $n$ has $n$ solutions in the complex (or possibly real) numbers.
+
+
+* Also shows:
+
+If a polynomial has at least one complex coefficient, it has at least one complex root.
+
+All real polynomials have complex roots in pairs, $\alpha$ and $\bar{\alpha}$.

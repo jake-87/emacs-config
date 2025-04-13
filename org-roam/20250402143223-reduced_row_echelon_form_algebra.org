@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       2F6120AB-95FE-4C28-AA36-58E0538371F0
+:END:
+#+title:Reduced row echelon form, algebra
+
+
+* Definition
+
+A matrix that is in [[id:6ED51834-6053-45E0-AB13-282C70B00A90][Row echelon form]], and:
+- No row is all-zeros
+- Every leading entry is 1, and the only nonzero entry in its row
+
+
+* Usage
+
+you can read the sols straight off it which is cool :thumbsup:

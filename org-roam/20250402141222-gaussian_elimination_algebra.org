@@ -1,0 +1,35 @@
+:PROPERTIES:
+:ID:       3C3181E4-6322-46B0-83DB-D03D5CBC7A94
+:END:
+#+title:Gaussian elimination, algebra
+
+* Defintion
+
+basically you use a matrix to uhhhh do the thing with the eliminating rows and whatnot in order to solve it yeah :D
+
+* Maple
+
+\[
+M = \begin{pmatrix}1 & 2 & 3 \\ 2 & 2 & 3 \\ 3 & 1 & -1 \end{pmatrix}
+\]
+
+```
+with(LinearAlgebra):
+LinearSolve(M)
+```
+my beloved
+
+
+* with more detail
+
+basically you're trying to reduce the not-augmented part of the matrix to [[id:2F6120AB-95FE-4C28-AA36-58E0538371F0][Reduced row echelon form]] so you can read
+the solutions off
+
+you have these operations:
+
+add/subtract multiples of rows to other rows
+swap rows
+:thumbsup:
+
+
+you can't do stuff at the same time, do them one after each other please

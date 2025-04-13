@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       A228528C-665D-449C-8670-57A582D135B5
+:END:
+#+title:Parametric equations, calculus
+
+* Defintion
+
+A parametric equation is a equation defined in term of a, or a set of, variables.
+
+For example, a circle can be defined parametrically in terms of $t$ as follows:
+
+\begin{align*}
+x &= \sin(t)
+\\
+y &= \cos(t)
+\end{align*}
+
+
+Related: [[id:87CE9A90-2889-4670-98C6-8B683024C5AA][Polar coordinates, calculus]]
+
+
+* Calculus with them
+
+
+In general, thanks to the chain rule:
+
+\[
+\frac{dy}{dx} = \frac{y'(t)}{x'(t)}
+\]
+
+

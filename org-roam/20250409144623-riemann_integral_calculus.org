@@ -1,0 +1,42 @@
+:PROPERTIES:
+:ID:       3920715A-9B5D-434C-B6E5-295A522C941B
+:END:
+#+title:Riemann integral, calculus
+
+* Definition
+
+Extending from [[id:074AFC4F-2D85-44BC-8119-3D9DD64DB2DD][Area under a curve]]:
+
+Suppose that a function $f : [a, b] \to R$ is bounded on its domain, and that $f(x)$ is positive. If there exists a *unique* real number $I$
+such that $\underline{S_P}(f) \leq I \leq \overline{S_P}(f)$ ([[id:1D38A88D-5F45-4CC7-95C3-87650E1A83AC][Riemann sum]]) for *every* paritition
+$P$ of $[a, b]$, we say that $f$ is *riemann integrable* on $[a,b]$.
+
+If $f$ is riemann integrable, then the unique real number $I$ satisfying the above is called the *definite integral of $f$ from $a$ to $b$*, and we write:
+
+\[\int_a^bf(x)dx = I\].
+
+
+$f$ is called the "integrand", and $a$/$b$ the "limits" of the integral.
+
+
+* Integrability
+
+** Sufficient:
+
+If a function is [[id:43970366-4FD9-4CEC-B618-45C56FEC0EDF][Bounded]] and [[id:BDC7AA0D-16BB-4B5A-9E6D-8FFA6E0440C5][Piecewise continuous]] on $[a,b]$, then it is riemann integrable over $[a,b]$.
+
+
+* Properties
+
+** [[id:3C6287F9-231F-4A36-B58B-339228522F90][Derivative]] related:
+
+\[\frac{d}{dx}\left( \int_a^x f(t)dt  \right) = f(x)\]
+
+
+* Indefinite integral
+
+If $F$ is an [[id:9920958D-DF1E-4D53-A4B8-01202B039620][Antiderivative]] of $f$, we write
+
+\[\int f(x)dx = F(x) + C\]
+
+for any constant C.

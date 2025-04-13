@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       1D38A88D-5F45-4CC7-95C3-87650E1A83AC
+:END:
+#+title:Riemann sum, calculus
+
+* Definition (upper)
+
+For a function $f : [a,b] \to R$, and a [[id:E5BF9A71-B88D-47BE-92CC-7E441F97083D][Partition]] of $[a, b]$ called $P$, the *upper* reimann sum is:
+
+\[S_P(f) = \sum_{k=1}^n (a_k - a_{k-1})\overline{f_k}\]
+
+where $\overline{f_k}$ is the largest value of $f$ in the domain $[a_{k-1}, a_k]$.
+
+
+* Definition (lower)
+
+For a function $f : [a,b] \to R$, and a [[id:E5BF9A71-B88D-47BE-92CC-7E441F97083D][Partition]] of $[a, b]$ called $P$, the *lower* reimann sum is:
+
+\[S_P(f) = \sum_{k=1}^n (a_k - a_{k-1})\underline{f_k}\]
+
+where $\underline{f_k}$ is the smalled value of $f$ in the domain $[a_{k-1}, a_k]$.
+

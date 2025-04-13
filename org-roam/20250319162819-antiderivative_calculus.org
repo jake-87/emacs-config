@@ -10,3 +10,6 @@ Suppose $f$ is [[id:67C73355-B947-423C-8847-FD4421206BD2][Continuous]] on some o
 A function \(F\) is an antiderivative of $f$ if $F'(x) = f(x)$, for all $x \in I$.
 
 
+* Additional stuff:
+
+- [[id:778FAD19-D314-43B6-9653-39777933DFE7][L'hopital's rule, calculus]]

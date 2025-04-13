@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       1205CFFD-FDDE-41D2-860E-81B813C87C26
+:END:
+#+title:Common derivatives, calculus
+
+
+* Polynomials
+
+\[\frac{d}{dx}x^n = nx^{n-1}\]
+
+
+\[\frac{d}{dx}f(x)g(x) = f(x)g'(x) + g(x)f'(x)\]
+
+
+\[\frac{d}{dx}\frac{u(x)}{v(x)} = \frac{u'(x)v(x) - v'(x)u(x)}{v(x)^2}\]
+
+* Powers
+
+
+

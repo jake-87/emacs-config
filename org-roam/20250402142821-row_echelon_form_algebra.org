@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       6ED51834-6053-45E0-AB13-282C70B00A90
+:END:
+#+title:Row echelon form, algebra
+
+
+* Defintion
+
+A matrix is in row echelon form if:
+
+- All rows having zero entries are at the bottom
+- The leading element (first nonzero element in each row) moves strictly to the right every row you move down
+
+
+Related: [[id:2F6120AB-95FE-4C28-AA36-58E0538371F0][Reduced row echelon form, algebra]]
+
+If there's any row with only one non-zero non-augmented entry, you can back-substitute solutions most of the time

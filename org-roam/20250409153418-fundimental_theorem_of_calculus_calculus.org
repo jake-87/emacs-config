@@ -1,0 +1,40 @@
+:PROPERTIES:
+:ID:       49E2AFE1-55DB-4ADD-9E57-6E0C3470D877
+:END:
+#+title:Fundimental theorem of calculus, calculus
+
+* First one
+
+Consider $f : [a, b] \to R$, where $f$ is [[id:3920715A-9B5D-434C-B6E5-295A522C941B][Riemann integrable]] over $[a, b]$, and the function $F : [a,b] \to R$ given by:
+
+\[F(x) = \int_a^xf(t)dt\]
+
+Then $F(x)$ is the signed area from $a$ to $x$.
+
+Additionally, $F$ is continuous on $[a,b]$, and:
+
+\[F'(x) = f(x)\], ie, $F$ is an [[id:9920958D-DF1E-4D53-A4B8-01202B039620][Antiderivative]] of $f$.
+
+
+
+* Second one
+
+Consider $f : [a, b] \to R$, where $f$ is [[id:3920715A-9B5D-434C-B6E5-295A522C941B][Riemann integrable]] over $[a, b]$, and suppose that $F$ is an [[id:9920958D-DF1E-4D53-A4B8-01202B039620][Antiderivative]] of $f$ on $(a, b)$. Then:
+
+\[\int_a^bf(t)dt = F(b) - F(a)\]
+
+
+
+
+* Some usage for derivatives of integrals
+
+\[\frac{d}{dx}\int_0^x \sin(t^2)dt = \sin(x^2)\]
+
+\[\frac{d}{dx}\int_0^{x^3} \sin(t^2)dt = \sin((x^2)^3)\times\frac{d}{dx}x^3\]
+
+
+
+\[\frac{d}{dx}\int_x^0 \dots dx = -\int_0^x \dots dx = \dots\]
+
+
+Make use of splitting up integrals!!

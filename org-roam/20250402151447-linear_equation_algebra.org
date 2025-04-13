@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       59B9E64E-DC99-44D9-BD53-049697881D7F
+:END:
+#+title:Linear equation, algebra
+
+* Definition
+
+A linear equation in variables $x_1, x_2, \dots, x_n$ is an equation of the form
+
+\[
+a_1x_1 + a_2x_2 + \dots + a_nx_n = k
+\]
+
+
+* Definition v2
+
+Let $A$ be an $m \times n$ matrix, and $T : R^n \to R^m$, $T(\mathbf{x}) = A\mathbf{x}$ be a linear function, and $b \in R^m$. We consider the linear
+equation $A\mathbf{x} = \mathbf{b}$ and solve for $\mathbf{x}$. The system is homogeneous if $b = 0$ and inhomogeneus otherwise.
+
+If the system if homogenous, $\mathbf{x} = \mathbf{0}$ is a solution, and so are:
+
+- sums of solutions
+
+- multiples of solutions
+

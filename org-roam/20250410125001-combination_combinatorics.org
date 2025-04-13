@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       6E91AC87-10D7-4D21-AC4B-C0424D6F3CEC
+:END:
+#+title:Combination, combinatorics
+
+* Definition
+
+A combination is counting where order does not matter, and repetitions are not allowed
+
+\[C(n, r) = \frac{n!}{r!(n-r)!}\]
+
+

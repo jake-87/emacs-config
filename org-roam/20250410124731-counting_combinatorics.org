@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       9E89D60C-385C-4B6C-9314-96C856F12024
+:END:
+#+title:Counting, combinatorics
+
+
+* Counting techniques
+
+- [[id:6E91AC87-10D7-4D21-AC4B-C0424D6F3CEC][Combination]]
+- [[id:0A24C810-C325-45DD-9CEB-D215C8EFF1F9][Permutation]]
+
+
+| Order          | Repetitions allowed | Repetitions banned |
+|----------------+---------------------+--------------------|
+| Matters        | n!                  | P(n, r)            |
+| Doesn't matter | C(n + r - 1, n - r) | C(n, r)            |
+|----------------+---------------------+--------------------|
+
+
+
+
+

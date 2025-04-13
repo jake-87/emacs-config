@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       3A76EE7B-0821-4E66-993B-4BC58347DEB2
+:END:
+#+title:Remainder theorem, algebra 
+
+* Definition
+
+Let $p$ be a complex [[id:9B8289A0-B985-41B5-B2CE-0230B945A109][Polynomial]] in $z$. The remaineder given by dividing $p$ by $z - \alpha$ is $p(\alpha)$. Indeed, $z - \alpha$ is only a factor if $p(\alpha) = 0$
+ie $\alpha$ is a root of $p$

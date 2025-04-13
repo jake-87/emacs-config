@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       7F3A7B8B-2349-4F12-9A5B-1777DD939EFC
+:END:
+#+title:Matrix, algebra
+
+* Definition
+
+A $n \times m$ matrix is a matrix with $n$ rows and $m$ cols.
+
+* Relations to linalg
+
+Related: [[id:59B9E64E-DC99-44D9-BD53-049697881D7F][Linear equation]], [[id:3C3181E4-6322-46B0-83DB-D03D5CBC7A94][Gaussian elimination]]
+
+If $A$ is an $m \times n$ matrix which can be transformed via row stuff to [[id:6ED51834-6053-45E0-AB13-282C70B00A90][Row echelon form]], then the [[id:899FC12C-6642-4DFA-B4FB-2C2584F352CA][System of equations]] $Ax = b$
+
+- At least one solution for every $\mathbf{b}$ in $\mathbb{R}^m$ iff $A$ has no non-leading rows
+- At most one, iff $A$ has no non-leading cols
+- Exactly one if both
+
+  A row is leading if it contains a leading term
+  Same for a leading column
+
+  so basically if the leading stuff is triangle then it's unique solution
+
+

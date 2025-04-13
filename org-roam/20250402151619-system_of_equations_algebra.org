@@ -1,0 +1,42 @@
+:PROPERTIES:
+:ID:       899FC12C-6642-4DFA-B4FB-2C2584F352CA
+:END:
+#+title:System of equations, algebra
+
+* Definition
+
+A system of [[id:59B9E64E-DC99-44D9-BD53-049697881D7F][Linear equation]]s is some number of linear equations, in the same variables.
+
+Any given set of linear equations
+
+\[
+a_1x_1 + a_2x_2 + \dots + a_nx_n = k_1
+\]
+
+\[
+b_1x_1 + b_2x_2 + \dots + b_nx_n = k_2
+\]
+
+\[
+\vdots
+\]
+
+\[
+n_1n_1 + n_2n_2 + \dots + n_nx_n = k_n
+\]
+
+can be written as an (augmented) [[id:7F3A7B8B-2349-4F12-9A5B-1777DD939EFC][Matrix]]:
+
+\begin{align*}
+\begin{bmatrix}
+a_1 & \dots & a_n &\bigm| k_1 \\
+\vdots & \ddots & \vdots & \\
+n_1 & \dots & n_n &\bigm| k_n \\
+\end{bmatrix} 
+\mathbf{x}
+\end{align*}
+
+
+and solved (potentially) with [[id:3C3181E4-6322-46B0-83DB-D03D5CBC7A94][Gaussian elimination]].
+
+

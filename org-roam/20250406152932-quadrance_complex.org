@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       3FC10617-9D51-4EC4-8654-EEE71A3D851A
+:END:
+#+title:Quadrance, complex
+
+* Definition
+
+the Quadrance of a complex number $z = a + bi$ is $a^2 + b^2$.

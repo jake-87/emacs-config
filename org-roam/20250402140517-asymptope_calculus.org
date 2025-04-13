@@ -1,0 +1,42 @@
+:PROPERTIES:
+:ID:       5FD3946D-DC7B-4FD4-8095-66CFBD95BBB8
+:END:
+#+title:Asymptope, calculus
+
+* Defintion (vertical)
+
+A vertical asymptope is an x-coordinate $p$ where, for some given function $f$:
+
+\begin{align*}
+\lim_{x \to p^+}f(x) \to \pm\infty
+\\
+\lim_{x \to p^-}f(x) \to \pm\infty
+\end{align*}
+
+
+* Defintion (horizontal)
+
+A horizontal asymptope is a y-coordinate $p$ where, for some given function $f$:
+
+\begin{align*}
+\lim_{x \to \pm\infty}f(x)& = p
+\end{align*}
+
+note that any given function can therefore have two horizontal asymtopes
+
+* Defintion (oblique)
+
+A line $y = mx+b$ is an oblique asymtope of $f$ if
+
+\begin{align*}
+\lim_{x\to\pm\infty}(f(x) - (mx + b)) = 0 
+\end{align*}
+
+
+
+* Helpful
+
+Often we can use polynomial long division to find asymtopes like this
+
+
+

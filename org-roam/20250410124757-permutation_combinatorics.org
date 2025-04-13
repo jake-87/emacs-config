@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       0A24C810-C325-45DD-9CEB-D215C8EFF1F9
+:END:
+#+title:Permutation, combinatorics
+
+* Definition
+
+A permutation is counting where order matters, and repetitions are not allowed
+
+
+\[P(n, r) = \frac{n!}{(n-r)!}\]
+
+

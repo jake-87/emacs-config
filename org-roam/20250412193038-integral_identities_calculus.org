@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       C03984BC-9D93-4829-BDE1-A54DF223962F
+:END:
+#+title:Integral identities, calculus
+
+* Some useful ones
+
+** Splitting up integrals
+
+If \(a \leq b \leq c\), then
+
+\[\int_a^c f(x)dx = \int_a^b f(x)dx + \int_b^c f(x)dx\]
+
+If \(b \geq a\)
+
+\[\int_a^b f(x)dx = \int_0^b f(x)dx - \int_0^a f(x)dx\]
+
+
+

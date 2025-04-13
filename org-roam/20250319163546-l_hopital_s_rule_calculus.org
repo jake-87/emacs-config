@@ -10,7 +10,7 @@ If:
 
 - $f(x) \to 0$ and $g(x) \to 0$ as $x \to a$, or
 
-- $f(x) \to \infty$ and $g(x) to \infty$ as $x \to a$
+- $f(x) \to \infty$ and $g(x) \to \infty$ as $x \to a$
 
 
 then:

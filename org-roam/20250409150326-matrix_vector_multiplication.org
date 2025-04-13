@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       2B2A899F-E271-4DC1-816E-3C84A9789339
+:END:
+#+title:Matrix-vector multiplication
+
+
+If $M$ is an $m \times n$ matrix, and $\mathbf{x}$ a vector in $R^m$, then \(M\mathbf{x}\) is a vector in $R^m$, where everything dot products

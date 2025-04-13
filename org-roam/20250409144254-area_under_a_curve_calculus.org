@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       074AFC4F-2D85-44BC-8119-3D9DD64DB2DD
+:END:
+#+title:Area under a curve, calculus
+
+* Definition
+
+Suppose that a function $f : [a, b] \to R$ is bounded on its domain, and that $f(x)$ is positive. If there exists a *unique* real number $A$
+such that $\underline{S_P}(f) \leq A \leq \overline{S_P}(f)$ ([[id:1D38A88D-5F45-4CC7-95C3-87650E1A83AC][Riemann sum]]) for *every* paritition
+$P$ of $[a, b]$ we say that $A$ is the "area under the graph of $f$ from $a$ to $b$."

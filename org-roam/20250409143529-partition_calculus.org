@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       E5BF9A71-B88D-47BE-92CC-7E441F97083D
+:END:
+#+title:Partition, calculus
+
+* Definition
+
+A finite set of points $P$ is said to be a partition of $[a,b]$ if:
+
+\[P = \{a_1, a_2, a_3, \dots, a_n\}\]
+
+\[a = a_1 < a_2 < \dots < a_n = b\]
+
